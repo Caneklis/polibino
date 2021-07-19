@@ -1,0 +1,26 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 78px;
+  letter-spacing: 0.095em;
+  color: $base-color;
+
+  &::first-letter {
+    font-family: $first-letter;
+    font-size: 130px;
+    line-height: 100px;
+    letter-spacing: 0.12em;
+  }
+}
+
+@mixin wrapper {
+  max-width: 1290px;
+  margin: 0 auto;
+}

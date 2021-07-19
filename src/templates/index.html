@@ -1,0 +1,37 @@
+---
+title: Главная страница
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<section class="promo">
+  <div class="promo__wrapper">
+    <h2 class="promo__title">Заголовок</h2>
+    <div class="promo__text">
+      <p>Краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст
+        краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст.</p>
+    </div>
+  </div>
+</section>
+
+<section class="mission">
+  <div class="mission__wrapper">
+    <h2 class="mission__title">Миссия фонда</h2>
+    <a class="mission__link" href="#">
+      Подробнее о фонде
+      <svg aria-hidden="true" width="16" height="14">
+        <use href="images/sprite_auto.svg#icon-arrow"></use>
+      </svg>
+    </a>
+    <div class="mission__text">
+      <p>Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий
+        условий активизации. С другой стороны сложившаяся структура организации играет важную роль в формировании
+        соответствующий условий активизации. Разнообразный и богатый опыт рамки и место обучения кадров способствует
+        подготовки и реализации дальнейших направлений развития.</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+.main-nav__button {
+  .main-nav__icon {
+    stroke: $base-color;
+
+    &-cross {
+      display: none;
+    }
+
+    &-menu {
+      display: block;
+    }
+  }
+
+  &--open {
+    .main-nav__icon {
+      &-cross {
+        display: block;
+      }
+      &-menu {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+  display: none;
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding-top: 20px;
+  }
+}
+
+.main-nav__sublist {
+  display: none;
+  @include list-reset;
+}
+
+.main-nav__item {
+  padding-right: 26px;
+  padding-bottom: 30px;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &:hover {
+    background-image: url("../images/stroke.svg");
+    background-position: center 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .main-nav__link {
+      color: $base-color;
+    }
+
+    .main-nav__sublist {
+      display: block;
+      min-width: 183px;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: #fff;
+    }
+  }
+}
+
+.main-nav__subitem {
+  border: 1px solid $base-color;
+  border-top: none;
+
+  &:first-child {
+    border-top: 1px solid $base-color;
+  }
+}
+
+.main-nav__sublink {
+  display: block;
+  padding: 8px 5px 7px 13px;
+  font-size: 14px;
+  line-height: 17px;
+  color: $light-color;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $brown;
+    color: $base-color;
+  }
+}
+
+.main-nav__link {
+  color: $light-color;
+  transition: all 0.3s ease;
+}
+
+.main-nav__user-block {
+  @include list-reset;
+  display: flex;
+  margin-left: 62px;
+}

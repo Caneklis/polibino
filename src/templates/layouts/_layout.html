@@ -1,0 +1,48 @@
+{% import "partials/_mixins.html" as mixins %}
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary Meta Tags -->
+  <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+  <meta type="description" content="{% if description %}{{ description }}{% else %}Description{% endif %}">
+  <link rel="stylesheet" media="all" href="{{ base_path }}css/style.min.css" />
+  <!-- BEGIN social data -->
+  {% include "../partials/_media-tags.html" %}
+  <!-- END social data -->
+  <link rel="icon" href="{{ base_path }}favicon/favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="{{ base_path }}favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ base_path }}favicon/apple-touch-icon.png"><!-- 180×180 -->
+  <link rel="manifest" href="{{ base_path }}favicon/manifest.webmanifest">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__wrapper">
+      {% include "../partials/_main-nav.html" %}
+    </div>
+  </header>
+
+  <!-- BEGIN content -->
+  <main class="page__main">
+    {% block content %}{% endblock %}
+  </main>
+  <!-- END content -->
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+
+    </div>
+  </footer>
+
+  <!-- BEGIN scripts -->
+  <script src="{{ base_path }}js/libs.min.js"></script>
+  <script src="{{ base_path }}js/main.min.js"></script>
+  <!-- END scripts -->
+
+</body>
+
+</html>

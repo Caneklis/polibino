@@ -1,0 +1,26 @@
+.promo {
+  max-width: 1820px;
+  margin: 0 auto;
+  background: url("../images/promo/promo-bg-1.png"),
+    url("../images/promo/promo-bg-2.png"), url("../images/promo/promo-bg-3.png"),
+    url("../images/promo/promo-bg-4.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top left, top right, bottom left, bottom center;
+  background-size: auto;
+}
+
+.promo__wrapper {
+  @include wrapper;
+  padding-top: 290px;
+  padding-bottom: 313px;
+}
+
+.promo__title {
+  @include title;
+}
+
+.promo__text {
+  max-width: 740px;
+  font-size: 24px;
+  line-height: 30px;
+}
