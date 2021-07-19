@@ -8,8 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Primary Meta Tags -->
   <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
-  <meta type="description" content="{% if description %}{{ description }}{% else %}Description{% endif %}">
+  <meta name="description" content="{% if description %}{{ description }}{% else %}Description{% endif %}">
   <link rel="preload" href="{{ base_path }}fonts/classica_one-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ base_path }}fonts/ubuntu-v15-latin_cyrillic-regular.woff2" as="font" type="font/woff2"
+    crossorigin>
   <link rel="stylesheet" media="all" href="{{ base_path }}css/style.min.css" />
   <!-- BEGIN social data -->
   {% include "../partials/_media-tags.html" %}
