@@ -353,6 +353,7 @@ template {
   font-weight: 300;
   font-family: "Ubuntu";
 
+  font-display: swap;
   src: local(""), url("../fonts/ubuntu-v15-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/ubuntu-v15-latin_cyrillic-300.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -362,6 +363,7 @@ template {
   font-weight: 400;
   font-family: "Ubuntu";
 
+  font-display: swap;
   src: local(""), url("../fonts/ubuntu-v15-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/ubuntu-v15-latin_cyrillic-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -371,6 +373,7 @@ template {
   font-weight: 500;
   font-family: "Ubuntu";
 
+  font-display: swap;
   src: local(""), url("../fonts/ubuntu-v15-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/ubuntu-v15-latin_cyrillic-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -380,6 +383,7 @@ template {
   font-weight: 700;
   font-family: "Ubuntu";
 
+  font-display: swap;
   src: local(""), url("../fonts/ubuntu-v15-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/ubuntu-v15-latin_cyrillic-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
