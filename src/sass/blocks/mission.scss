@@ -3,13 +3,14 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left 94px;
-  padding-top: 668px;
 }
 
 .mission__wrapper {
   @include wrapper;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 668px;
+  padding-bottom: 190px;
 }
 
 .mission__title {

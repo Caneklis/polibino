@@ -57,12 +57,11 @@
 }
 
 .main-nav__item {
-  padding-right: 26px;
+  padding-right: 30px;
   padding-bottom: 30px;
   position: relative;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 18px;
 
   &:last-child {
     padding-right: 0;
@@ -120,5 +119,5 @@
 .main-nav__user-block {
   @include list-reset;
   display: flex;
-  margin-left: 62px;
+  margin-left: 70px;
 }

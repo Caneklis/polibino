@@ -1,0 +1,164 @@
+.news__wrapper {
+  @include wrapper;
+  padding-bottom: 230px;
+}
+
+.news__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 73px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    margin: 0 auto;
+  }
+}
+
+.news__item {
+  padding-left: 30px;
+  padding-bottom: 16px;
+  border: 1px solid $base-color;
+  border-bottom-right-radius: 130px;
+
+  &--main {
+    grid-column: 1/3;
+  }
+}
+
+.news__article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.news__type {
+  // align-self: center;
+  min-width: 143px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  background-color: $blue-color;
+
+  &--green {
+    background-color: $light-green-color;
+  }
+
+  &--brown {
+    background-color: $brown;
+  }
+}
+
+.news__date {
+  // align-self: center;
+  margin-left: auto;
+  padding-right: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
+}
+
+.news__photo {
+  margin: 0 0 20px -30px;
+}
+
+.news__title {
+  width: 100%;
+  margin: 20px 0 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: $base-color;
+}
+
+.news__lead {
+  width: 100%;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 27px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.news__link {
+  align-self: center;
+  color: $base-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  svg {
+    margin-left: 2px;
+  }
+
+  &--bg {
+    min-width: 190px;
+    margin-right: 25px;
+    padding-top: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: $blue-color;
+    border: 2px solid $blue-color;
+    transition: all 0.3s ease;
+
+    svg {
+      margin-left: 13px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: #fff;
+      color: $blue-color;
+      border: 2px solid $blue-color;
+    }
+  }
+
+  &--green {
+    color: #fff;
+    background-color: $light-green-color;
+    border: 2px solid $light-green-color;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #fff;
+      color: $light-green-color;
+      border: 2px solid $light-green-color;
+    }
+  }
+
+  &--brown {
+    color: #fff;
+    background-color: $brown;
+    border: 2px solid $brown;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #fff;
+      color: $brown;
+      border: 2px solid $brown;
+    }
+  }
+}
