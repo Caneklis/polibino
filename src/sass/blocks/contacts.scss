@@ -1,12 +1,31 @@
+.contacts {
+  padding-bottom: 445px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 130px;
+  }
+}
+
 .contacts__wrapper {
   @include wrapper;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
+  padding: 0 20px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contacts__title {
   @include title;
+
+  @media (max-width: 767px) {
+    &::first-letter {
+      line-height: 0.5;
+    }
+  }
 }
 
 .contacts__text {
@@ -14,10 +33,26 @@
   font-weight: 300;
   font-size: 21px;
   line-height: 27px;
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+    padding-bottom: 27px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+
+    .contacts__learn-more {
+      display: none;
+    }
+
+    p {
+      margin-top: 22px;
+    }
+  }
 }
 
 .contacts__map {
-  width: 630px;
+  max-width: 630px;
   position: relative;
   // padding-bottom: 300px;
 
@@ -48,14 +83,67 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media (max-width: 1200px) {
+    &::before {
+      left: 10%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    max-width: unset;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+
+    &::before {
+      top: 154px;
+      left: 151px;
+      width: 50px;
+      height: 100px;
+    }
+
+    &::after {
+      top: 80px;
+      right: 0;
+      width: 80px;
+      height: 217px;
+    }
+  }
+
+  + .contacts__learn-more {
+    margin-top: 63px;
+    font-size: 12px;
+    line-height: 38px;
+
+    svg {
+      width: 9px;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 .contacts__map-wrapper {
   position: relative;
+  width: 100%;
+  height: 100%;
   border-top-left-radius: 125px;
   border-bottom-right-radius: 125px;
   border: 2px solid $base-color;
   overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .contacts__link {
@@ -73,5 +161,25 @@
 
   svg {
     margin-left: 16px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  svg {
+    margin-left: 20px;
+
+    @media (min-width: 768px) {
+      order: -1;
+      margin-right: 20px;
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
   }
 }

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -17,4 +23,40 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+// .swiper-container {
+//   max-width: 410px;
+// }
+
+@media (max-width: 767px) {
+  .swiper-slide {
+    opacity: 0.3;
+
+    &-active {
+      opacity: 1;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 4px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #cecece;
+  border-radius: 0;
+
+  &-active {
+    background-color: $green-color;
+  }
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 7px;
 }

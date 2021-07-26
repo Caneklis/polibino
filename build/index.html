@@ -37,61 +37,97 @@
             <a href="#" class="logo__link"><img src="images/logo.svg" width="338" height="60" alt="Логотип усадьбы"></a>
           </div>
           <button class="main-nav__button" type="button" aria-expanded="false" aria-controls="main-nav__list">
-            <svg class="main-nav__icon" aria-hidden="true" width="32" height="32">
+            <svg class="main-nav__icon" aria-hidden="true" width="30" height="16">
               <use class="main-nav__icon-menu" href="images/sprite_auto.svg#menu"></use>
               <use class="main-nav__icon-cross" href="images/sprite_auto.svg#cross"></use>
             </svg>
           </button>
-          <ul class="main-nav__list" id="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="#">О фонде</a>
-              <ul class="main-nav__sublist">
-                <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Общая информация</a></li>
-                <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Попечительский совет</a></li>
-                <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Управляющий совет</a></li>
-                <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Документы и отчетность</a></li>
-              </ul>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Проекты</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Наследие Нечаевых</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <ul class="main-nav__user-block">
-            <li class="blind-version">
-              <svg class="main-nav__icon" aria-hidden="true" width="21" height="13">
-                <use class="main-nav__icon-menu" href="images/sprite_auto.svg#icon-eye"></use>
-              </svg>
-              <span class="visually-hidden">Версия для слабовидящих</span>
-            </li>
-            <li class="search">
-              <form action="#" class="search__form">
-                <input type="search">
-                <button class="search__btn" type="submit">
-                  <svg class="main-nav__icon" aria-hidden="true" width="17" height="18">
-                    <use class="main-nav__icon-menu" href="images/sprite_auto.svg#icon-search"></use>
-                  </svg>
-                  <span class="visually-hidden">Найти</span>
-                </button>
-              </form>
-            </li>
-            <li class="lang">
-              <a href="#" class="lang__link">En</a>
-            </li>
-            <li class="donate"><a href="#" class="donate__link"> Поддержать <svg class="main-nav__icon" aria-hidden="true" width="16" height="14">
-                  <use class="main-nav__icon-menu" href="images/sprite_auto.svg#icon-arrow"></use>
+          <div class="main-nav__menu">
+            <ul class="main-nav__list" id="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current" href="#">О фонде</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Общая информация</a></li>
+                  <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Попечительский совет</a></li>
+                  <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Управляющий совет</a></li>
+                  <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Документы и отчетность</a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Проекты</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Наследие Нечаевых</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="main-nav__user-block">
+              <li class="blind-version">
+                <svg class="main-nav__icon" aria-hidden="true" width="21" height="13">
+                  <use class="main-nav__icon-menu" href="images/sprite_auto.svg#icon-eye"></use>
                 </svg>
-              </a>
-            </li>
-          </ul>
+                <span class="visually-hidden">Версия для слабовидящих</span>
+              </li>
+              <li class="search">
+                <form action="#" class="search__form">
+                  <input type="search">
+                  <button class="search__btn" type="submit">
+                    <svg class="main-nav__icon" aria-hidden="true" width="17" height="18">
+                      <use class="main-nav__icon-menu" href="images/sprite_auto.svg#icon-search"></use>
+                    </svg>
+                    <span class="visually-hidden">Найти</span>
+                  </button>
+                </form>
+              </li>
+              <li class="lang">
+                <a href="#" class="lang__link">En</a>
+              </li>
+              <li class="donate"><a href="#" class="donate__link"> Поддержать <svg class="main-nav__icon" aria-hidden="true" width="16" height="14">
+                    <use class="main-nav__icon-menu" href="images/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="main-nav__social  social">
+              <ul class="social__list  social__list--header">
+                <li class="social__item">
+                  <a class="social__link  social__link--inst" href="#">
+                    <span class="visually-hidden">Страница в инстаграме</span>
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use href="images/sprite_auto.svg#icon-inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link  social__link--trip" href="#">
+                    <span class="visually-hidden">Страница в трипадвайзере</span>
+                    <svg aria-hidden="true" width="34" height="20">
+                      <use href="images/sprite_auto.svg#icon-trip"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link  social__link--vk" href="#">
+                    <span class="visually-hidden">Страница в вк</span>
+                    <svg aria-hidden="true" width="32" height="19">
+                      <use href="images/sprite_auto.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link  social__link--fb" href="#">
+                    <span class="visually-hidden">Страница на фейсбуке</span>
+                    <svg aria-hidden="true" width="10" height="20">
+                      <use href="images/sprite_auto.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <script>
-        </script>
       </div>
     </header>
     <!-- BEGIN content -->
@@ -119,104 +155,127 @@
       <section class="news">
         <div class="news__wrapper">
           <h2 class="visually-hidden">Новости</h2>
-          <ul class="news__list">
-            <li class="news__item  news__item--main">
-              <article class="news__article">
-                <div class="news__photo">
-                  <img src="images/news-photo-big.jpg" width="850" height="350" loading="lazy" alt="Фотография к новости">
-                </div>
-                <div class="news__type">Проект</div>
-                <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
-                <h3 class="news__title">Началась реставрация фасада усадьбы Полибино</h3>
-                <div class="news__lead">
-                  <p>Краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст.</p>
-                </div>
-                <a class="news__link  news__link--bg  news__link--blue" href="#"> Поддержать <svg aria-hidden="true" width="16" height="14">
-                    <use href="images/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </a>
-                <a class="news__link" href="#"> Читать <svg aria-hidden="true" width="16" height="14">
-                    <use href="images/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </a>
-              </article>
-            </li>
-            <li class="news__item">
-              <article class="news__article">
-                <div class="news__photo">
-                  <img src="images/news-photo-1.jpg" width="410" height="350" loading="lazy" alt="Фотография к новости">
-                </div>
-                <div class="news__type  news__type--green">Событие</div>
-                <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
-                <h3 class="news__title">Авторские экскурсии по усадьбе</h3>
-                <div class="news__lead">
-                  <p>Краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст.</p>
-                </div>
-                <a class="news__link  news__link--bg  news__link--green" href="#"> Посетить <svg aria-hidden="true" width="16" height="14">
-                    <use href="images/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </a>
-              </article>
-            </li>
-            <li class="news__item">
-              <article class="news__article">
-                <div class="news__photo">
-                  <img src="images/news-photo-2.jpg" width="410" height="350" loading="lazy" alt="Фотография к новости">
-                </div>
-                <div class="news__type  news__type--brown">Новость</div>
-                <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
-                <h3 class="news__title">Более 100 человек стали патронами фонда</h3>
-                <div class="news__lead">
-                  <p>Краткий текст краткий текст краткий текст краткий текст текст.</p>
-                </div>
-                <a class="news__link" href="#"> Читать <svg aria-hidden="true" width="16" height="14">
-                    <use href="images/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </a>
-              </article>
-            </li>
-            <li class="news__item">
-              <article class="news__article">
-                <div class="news__photo">
-                  <img src="images/news-photo-3.jpg" width="410" height="350" loading="lazy" alt="Фотография к новости">
-                </div>
-                <div class="news__type">Проект</div>
-                <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
-                <h3 class="news__title">Началась реставрация фасада усадьбы Полибино</h3>
-                <div class="news__lead">
-                  <p>Краткий текст краткий текст краткий текст краткий текст текст.</p>
-                </div>
-                <a class="news__link  news__link--bg  news__link--blue" href="#"> Поддержать <svg aria-hidden="true" width="16" height="14">
-                    <use href="images/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </a>
-                <a class="news__link" href="#"> Читать <svg aria-hidden="true" width="16" height="14">
-                    <use href="images/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </a>
-              </article>
-            </li>
-            <li class="news__item">
-              <article class="news__article">
-                <div class="news__photo">
-                  <img src="images/news-photo-4.jpg" width="410" height="350" loading="lazy" alt="Фотография к новости">
-                </div>
-                <div class="news__type  news__type--brown">Новость</div>
-                <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
-                <h3 class="news__title">Более 100 человек стали патронами фонда</h3>
-                <div class="news__lead">
-                  <p>Краткий текст краткий текст краткий текст краткий текст текст.</p>
-                </div>
-                <a class="news__link" href="#"> Читать <svg aria-hidden="true" width="16" height="14">
-                    <use href="images/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </a>
-              </article>
-            </li>
-          </ul>
+          <div class="swiper-container">
+            <ul class="news__list  swiper-wrapper">
+              <li class="news__item  news__item--main  swiper-slide">
+                <article class="news__article">
+                  <div class="news__photo">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="images/news-photo-1-mobile.jpg">
+                      <source media="(min-width: 768px)" srcset="images/news-photo-big.jpg">
+                      <img src="images/news-photo-big.jpg" width="850" height="350" loading="lazy" alt="Фотография к новости">
+                    </picture>
+                    <!-- <img src="images/news-photo-big.jpg" width="850" height="350" loading="lazy" alt="Фотография к новости"> -->
+                  </div>
+                  <div class="news__type">Проект</div>
+                  <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
+                  <h3 class="news__title">Началась реставрация фасада усадьбы Полибино</h3>
+                  <div class="news__lead">
+                    <p>Краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст.</p>
+                  </div>
+                  <a class="news__link  news__link--bg  news__link--blue" href="#"> Поддержать <svg aria-hidden="true" width="16" height="14">
+                      <use href="images/sprite_auto.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                  <a class="news__link" href="#"> Читать <svg aria-hidden="true" width="16" height="14">
+                      <use href="images/sprite_auto.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="news__item  swiper-slide">
+                <article class="news__article">
+                  <div class="news__photo">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="images/news-photo-1-mobile.jpg">
+                      <source media="(min-width: 768px)" srcset="images/news-photo-big.jpg">
+                      <img src="images/news-photo-1.jpg" width="410" height="350" loading="lazy" alt="Фотография к новости">
+                    </picture>
+                  </div>
+                  <div class="news__type  news__type--green">Событие</div>
+                  <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
+                  <h3 class="news__title">Авторские экскурсии по усадьбе</h3>
+                  <div class="news__lead">
+                    <p>Краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст.</p>
+                  </div>
+                  <a class="news__link  news__link--bg  news__link--green" href="#"> Посетить <svg aria-hidden="true" width="16" height="14">
+                      <use href="images/sprite_auto.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="news__item  swiper-slide">
+                <article class="news__article">
+                  <div class="news__photo">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="images/news-photo-1-mobile.jpg">
+                      <source media="(min-width: 768px)" srcset="images/news-photo-2.jpg">
+                      <img src="images/news-photo-2.jpg" width="410" height="350" loading="lazy" alt="Фотография к новости">
+                    </picture>
+                  </div>
+                  <div class="news__type  news__type--brown">Новость</div>
+                  <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
+                  <h3 class="news__title">Более 100 человек стали патронами фонда</h3>
+                  <div class="news__lead">
+                    <p>Краткий текст краткий текст краткий текст краткий текст текст.</p>
+                  </div>
+                  <a class="news__link" href="#"> Читать <svg aria-hidden="true" width="16" height="14">
+                      <use href="images/sprite_auto.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="news__item  swiper-slide">
+                <article class="news__article">
+                  <div class="news__photo">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="images/news-photo-1-mobile.jpg">
+                      <source media="(min-width: 768px)" srcset="images/news-photo-3.jpg">
+                      <img src="images/news-photo-3.jpg" width="410" height="350" loading="lazy" alt="Фотография к новости">
+                    </picture>
+                  </div>
+                  <div class="news__type">Проект</div>
+                  <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
+                  <h3 class="news__title">Началась реставрация фасада усадьбы Полибино</h3>
+                  <div class="news__lead">
+                    <p>Краткий текст краткий текст краткий текст краткий текст текст.</p>
+                  </div>
+                  <a class="news__link  news__link--bg  news__link--blue" href="#"> Поддержать <svg aria-hidden="true" width="16" height="14">
+                      <use href="images/sprite_auto.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                  <a class="news__link" href="#"> Читать <svg aria-hidden="true" width="16" height="14">
+                      <use href="images/sprite_auto.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="news__item  swiper-slide">
+                <article class="news__article">
+                  <div class="news__photo">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="images/news-photo-1-mobile.jpg">
+                      <source media="(min-width: 768px)" srcset="images/news-photo-4.jpg">
+                      <img src="images/news-photo-4.jpg" width="410" height="350" loading="lazy" alt="Фотография к новости">
+                    </picture>
+                  </div>
+                  <div class="news__type  news__type--brown">Новость</div>
+                  <time class="news__date" datetime="2021-07-15">15.07.2021, чт</time>
+                  <h3 class="news__title">Более 100 человек стали патронами фонда</h3>
+                  <div class="news__lead">
+                    <p>Краткий текст краткий текст краткий текст краткий текст текст.</p>
+                  </div>
+                  <a class="news__link" href="#"> Читать <svg aria-hidden="true" width="16" height="14">
+                      <use href="images/sprite_auto.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-      </section>
-      <section class="sponsors">
+      </section>' <section class="sponsors">
         <div class="sponsors__become">
           <div class="sponsors__wrapper">
             <div class="sponsors__become-title">Стать меценатом фонда</div>
@@ -226,10 +285,10 @@
             </a>
           </div>
         </div>
-        <div class="sponsors__wrapper">
-          <h2 class="sponsors__title"><span>Меценаты,</span> <span>Спонсоры,</span> <span>Партнеры</span></h2>
-          <ul class="sponsors__list">
-            <li class="sponsors__item">
+        <h2 class="sponsors__title"><span>Меценаты,</span> <span>Спонсоры,</span> <span>Партнеры</span></h2>
+        <div class="swiper-container">
+          <ul class="sponsors__list  swiper-wrapper">
+            <div class="sponsors__item  swiper-slide">
               <article class="sponsors__item-article">
                 <div class="sponsors__item-photo">
                   <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
@@ -239,9 +298,13 @@
                 <div class="sponsors__item-text">
                   <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
                 </div>
+                <a href="#" class="sponsors__all-link"> Все меценаты <svg aria-hidden="true" width="9" height="8">
+                    <use href="images/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
               </article>
-            </li>
-            <li class="sponsors__item">
+            </div>
+            <div class="sponsors__item  swiper-slide">
               <article class="sponsors__item-article">
                 <div class="sponsors__item-photo">
                   <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
@@ -251,23 +314,13 @@
                 <div class="sponsors__item-text">
                   <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
                 </div>
+                <a href="#" class="sponsors__all-link"> Все меценаты <svg aria-hidden="true" width="9" height="8">
+                    <use href="images/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
               </article>
-            </li>
-            <li class="sponsors__item">
-              <article class="sponsors__item-article">
-                <div class="sponsors__item-photo">
-                  <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
-                </div>
-                <div class="sponsors__type">Меценат</div>
-                <h3 class="sponsors__item-title">Иванов <br> Иван <br> Иванович</h3>
-                <div class="sponsors__item-text">
-                  <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <ul class="sponsors__list">
-            <li class="sponsors__item">
+            </div>
+            <div class="sponsors__item  swiper-slide">
               <article class="sponsors__item-article">
                 <div class="sponsors__item-photo">
                   <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
@@ -276,10 +329,15 @@
                 <h3 class="sponsors__item-title">Иванов <br> Иван <br> Иванович</h3>
                 <div class="sponsors__item-text">
                   <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
+                  <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
                 </div>
+                <a href="#" class="sponsors__all-link"> Все спонсоры <svg aria-hidden="true" width="9" height="8">
+                    <use href="images/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
               </article>
-            </li>
-            <li class="sponsors__item">
+            </div>
+            <div class="sponsors__item  swiper-slide">
               <article class="sponsors__item-article">
                 <div class="sponsors__item-photo">
                   <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
@@ -288,24 +346,15 @@
                 <h3 class="sponsors__item-title">Иванов <br> Иван <br> Иванович</h3>
                 <div class="sponsors__item-text">
                   <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
-                </div>
-              </article>
-            </li>
-            <li class="sponsors__item">
-              <article class="sponsors__item-article">
-                <div class="sponsors__item-photo">
-                  <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
-                </div>
-                <div class="sponsors__type  sponsors__type--blue">Спонсор</div>
-                <h3 class="sponsors__item-title">Иванов <br> Иван <br> Иванович</h3>
-                <div class="sponsors__item-text">
                   <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
                 </div>
+                <a href="#" class="sponsors__all-link"> Все спонсоры <svg aria-hidden="true" width="9" height="8">
+                    <use href="images/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
               </article>
-            </li>
-          </ul>
-          <ul class="sponsors__list">
-            <li class="sponsors__item">
+            </div>
+            <div class="sponsors__item  swiper-slide">
               <article class="sponsors__item-article">
                 <div class="sponsors__item-photo">
                   <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
@@ -315,9 +364,13 @@
                 <div class="sponsors__item-text">
                   <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
                 </div>
+                <a href="#" class="sponsors__all-link"> Все партнеры <svg aria-hidden="true" width="9" height="8">
+                    <use href="images/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
               </article>
-            </li>
-            <li class="sponsors__item">
+            </div>
+            <div class="sponsors__item  swiper-slide">
               <article class="sponsors__item-article">
                 <div class="sponsors__item-photo">
                   <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
@@ -327,35 +380,28 @@
                 <div class="sponsors__item-text">
                   <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
                 </div>
+                <a href="#" class="sponsors__all-link"> Все партнеры <svg aria-hidden="true" width="9" height="8">
+                    <use href="images/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
               </article>
-            </li>
-            <li class="sponsors__item">
-              <article class="sponsors__item-article">
-                <div class="sponsors__item-photo">
-                  <img src="//via.placeholder.com/300x254" width="300" height="254" alt="Описание фотографии">
-                </div>
-                <div class="sponsors__type  sponsors__type--light-green">Партнер</div>
-                <h3 class="sponsors__item-title">Иванов <br> Иван <br> Иванович</h3>
-                <div class="sponsors__item-text">
-                  <p>Описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны описание персоны.</p>
-                </div>
-              </article>
-            </li>
+            </div>
           </ul>
-          <div class="sponsors__links">
-            <a href="#"> Все меценаты <svg aria-hidden="true" width="16" height="14">
-                <use href="images/sprite_auto.svg#icon-arrow"></use>
-              </svg>
-            </a>
-            <a href="#"> Все спонсоры <svg aria-hidden="true" width="16" height="14">
-                <use href="images/sprite_auto.svg#icon-arrow"></use>
-              </svg>
-            </a>
-            <a href="#"> Все партнеры <svg aria-hidden="true" width="16" height="14">
-                <use href="images/sprite_auto.svg#icon-arrow"></use>
-              </svg>
-            </a>
-          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="sponsors__links">
+          <a href="#"> Все меценаты <svg aria-hidden="true" width="16" height="14">
+              <use href="images/sprite_auto.svg#icon-arrow"></use>
+            </svg>
+          </a>
+          <a href="#"> Все спонсоры <svg aria-hidden="true" width="16" height="14">
+              <use href="images/sprite_auto.svg#icon-arrow"></use>
+            </svg>
+          </a>
+          <a href="#"> Все партнеры <svg aria-hidden="true" width="16" height="14">
+              <use href="images/sprite_auto.svg#icon-arrow"></use>
+            </svg>
+          </a>
         </div>
       </section>
       <section class="contacts">
@@ -364,8 +410,18 @@
             <h2 class="contacts__title">Полибино <br>на карте</h2>
             <div class="contacts__text">
               <p>Липецкая область, Данковский район, село Полибино, ул. Школьная, д.4</p>
-              <p><a class="contacts__link" href="mailto:">usadba.polibino@gmail.com</a></p>
-              <p><a class="contacts__link" href="tel:">8 999 999 99 99</a></p>
+              <p>
+                <a class="contacts__link" href="mailto:"> usadba.polibino@gmail.com <svg aria-hidden="true" width="20" height="14">
+                    <use href="images/sprite_auto.svg#icon-mail"></use>
+                  </svg>
+                </a>
+              </p>
+              <p>
+                <a class="contacts__link" href="tel:"> 8 999 999 99 99 <svg aria-hidden="true" width="20" height="19">
+                    <use href="images/sprite_auto.svg#icon-phone"></use>
+                  </svg>
+                </a>
+              </p>
               <a class="contacts__learn-more" href="#"> Подробнее <svg aria-hidden="true" width="16" height="14">
                   <use href="images/sprite_auto.svg#icon-arrow"></use>
                 </svg>
@@ -374,15 +430,154 @@
           </div>
           <div class="contacts__map">
             <div class="contacts__map-wrapper">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade46ff56c10a060a4169760a8c9590e4cf591c78368a31aadbd2780c2d91f11c&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade46ff56c10a060a4169760a8c9590e4cf591c78368a31aadbd2780c2d91f11c&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
             </div>
           </div>
+          <a class="contacts__learn-more" href="#"> Подробнее <svg aria-hidden="true" width="16" height="14">
+              <use href="images/sprite_auto.svg#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__wrapper">
+          <h2 class="subscribe__title">Подпишитесь <br>на нас</h2>
+          <section class="social">
+            <ul class="social__list social__list--vertical">
+              <li class="social__item">
+                <a class="social__link  social__link--inst" href="#">
+                  <span class="visually-hidden">Страница в инстаграме</span>
+                  <svg aria-hidden="true" width="61" height="61">
+                    <use href="images/sprite_auto.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link  social__link--trip" href="#">
+                  <span class="visually-hidden">Страница в трипадвайзере</span>
+                  <svg aria-hidden="true" width="61" height="36">
+                    <use href="images/sprite_auto.svg#icon-trip"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link  social__link--vk" href="#">
+                  <span class="visually-hidden">Страница в вк</span>
+                  <svg aria-hidden="true" width="60" height="35">
+                    <use href="images/sprite_auto.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link  social__link--fb" href="#">
+                  <span class="visually-hidden">Страница на фейсбуке</span>
+                  <svg aria-hidden="true" width="30" height="61">
+                    <use href="images/sprite_auto.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="subscribe__pictures-block">
+            <ul class="subscribe__pictures-list">
+              <li class="subscribe__pictures-item"><a href="#"><img src="images/subscribe/subscribe-pic-1.jpg" width="300" height="300" alt="Описание картинки"></a></li>
+              <li class="subscribe__pictures-item"><a href="#"><img src="images/subscribe/subscribe-pic-2.jpg" width="300" height="300" alt="Описание картинки"></a></li>
+              <li class="subscribe__pictures-item"><a href="#"><img src="images/subscribe/subscribe-pic-3.jpg" width="300" height="300" alt="Описание картинки"></a></li>
+              <li class="subscribe__pictures-item"><a href="#"><img src="images/subscribe/subscribe-pic-4.jpg" width="300" height="300" alt="Описание картинки"></a></li>
+              <li class="subscribe__pictures-item"><a href="#"><img src="images/subscribe/subscribe-pic-5.jpg" width="300" height="300" alt="Описание картинки"></a></li>
+              <li class="subscribe__pictures-item"><a href="#"><img src="images/subscribe/subscribe-pic-6.jpg" width="300" height="300" alt="Описание картинки"></a></li>
+            </ul>
+          </section>
         </div>
       </section>
     </main>
     <!-- END content -->
     <footer class="footer">
       <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a class="footer__logo-link" href="#">
+            <svg aria-hidden="true" width="338" height="60">
+              <use href="images/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="footer-copy"><span>©</span> Полибино 2021</div>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">О фонде</a></li>
+            <li class="footer__nav-item"><a href="#">Общая информация</a></li>
+            <li class="footer__nav-item"><a href="#">Попечительский совет</a></li>
+            <li class="footer__nav-item"><a href="#">Управляющий совет</a></li>
+            <li class="footer__nav-item"><a href="#">Документы и отчетность</a></li>
+            <li class="footer__nav-item"><a href="#">Наши меценаты</a></li>
+            <li class="footer__nav-item"><a href="#">Наши спонсоры</a></li>
+            <li class="footer__nav-item"><a href="#">Наши партнеры</a></li>
+            <li class="footer__nav-item"><a href="#">Наши партнеры</a></li>
+            <li class="footer__nav-item"><a href="#">Новости и события</a></li>
+            <li class="footer__nav-item"><a href="#">Мы в СМИ</a></li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">Проекты</a></li>
+            <li class="footer__nav-item"><a href="#">Реконструкция усадьбы</a></li>
+            <li class="footer__nav-item"><a href="#">Реконструкция усадьбы</a></li>
+            <li class="footer__nav-item"><a href="#">Авторские экскурсии</a></li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">Наследие Нечаевых</a></li>
+            <li class="footer__nav-item"><a href="#">Семья</a></li>
+            <li class="footer__nav-item"><a href="#">Усадьба Полибино</a></li>
+            <li class="footer__nav-item"><a href="#">ГМИИ им. Пушкина</a></li>
+            <li class="footer__nav-item"><a href="#">Шуховская башня</a></li>
+          </ul>
+        </div>
+        <div class="footer__user-block">
+          <div class="footer__donate"><a class="footer__donate-link" href="#"> Поддержать <svg aria-hidden="true" width="16" height="14">
+                <use href="images/sprite_auto.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <a class="footer__contacts" href="#">Контакты</a>
+          <a class="footer__blind-version" href="#">Версия для слабовидящих</a>
+        </div>
+        <div class="footer__social  social">
+          <ul class="social__list  social__list--footer">
+            <li class="social__item">
+              <a class="social__link  social__link--inst" href="#">
+                <span class="visually-hidden">Страница в инстаграме</span>
+                <svg aria-hidden="true" width="22" height="22">
+                  <use href="images/sprite_auto.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--trip" href="#">
+                <span class="visually-hidden">Страница в трипадвайзере</span>
+                <svg aria-hidden="true" width="31" height="18">
+                  <use href="images/sprite_auto.svg#icon-trip"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--vk" href="#">
+                <span class="visually-hidden">Страница в вк</span>
+                <svg aria-hidden="true" width="30" height="17">
+                  <use href="images/sprite_auto.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--fb" href="#">
+                <span class="visually-hidden">Страница на фейсбуке</span>
+                <svg aria-hidden="true" width="9" height="18">
+                  <use href="images/sprite_auto.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__lang  lang">
+          <a href="#" class="lang__link">En</a>
+        </div>
       </div>
     </footer>
     <!-- BEGIN scripts -->

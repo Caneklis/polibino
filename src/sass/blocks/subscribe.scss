@@ -1,0 +1,40 @@
+.subscribe {
+  padding-bottom: 155px;
+}
+
+.subscribe__wrapper {
+  @include wrapper;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.subscribe__title {
+  grid-column: 1/-1;
+  @include title;
+  text-align: right;
+  margin-bottom: 125px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 27px;
+
+    &::first-letter {
+      line-height: 0.5;
+    }
+  }
+}
+
+.subscribe__pictures-list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 767px) {
+    padding-top: 33px;
+    gap: 8px;
+  }
+}

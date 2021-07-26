@@ -1,4 +1,5 @@
 @import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/swiper/swiper-bundle.min";
 @import "global/variables";
 @import "global/mixins";
 @import "global/fonts";
@@ -6,6 +7,7 @@
 @import "global/scafoldings";
 @import "blocks/page";
 @import "blocks/header";
+@import "blocks/logo";
 @import "blocks/main-nav";
 @import "blocks/promo";
 @import "blocks/search";
@@ -16,3 +18,6 @@
 @import "blocks/news";
 @import "blocks/sponsors";
 @import "blocks/contacts";
+@import "blocks/subscribe";
+@import "blocks/social";
+@import "blocks/footer";

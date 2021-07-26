@@ -1,3 +1,7 @@
 .blind-version {
   align-self: center;
+
+  @media (max-width: 767px) {
+    order: 4;
+  }
 }

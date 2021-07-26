@@ -4,6 +4,10 @@
   input {
     display: none;
   }
+
+  @media (max-width: 767px) {
+    order: 3;
+  }
 }
 
 .search__btn {

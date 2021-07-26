@@ -1,3 +1,6 @@
+// import Swiper JS
+import Swiper from "swiper/bundle";
+
 document.addEventListener("DOMContentLoaded", () => {
   // eslint-disable-next-line no-console
   console.log("DOM полностью загружен и разобран");
@@ -22,19 +25,58 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollPrev = scrolled;
   });
 
-  // const promo = document.querySelector(".promo");
+  /* Swiper
+   **************************************************************/
+  var swiper = Swiper;
+  var init = false;
 
-  // setTimeout(() => {
-  //   changeBg();
-  // }, 1000);
+  /* Which media query
+   **************************************************************/
+  function swiperMode() {
+    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 767px)");
+    let tablet = window.matchMedia("(min-width: 768px)");
 
-  // const changeBg = () => {
-  //   setTimeout(() => {
-  //     promo.classList.add("promo--bg-1");
-  //   }, 500);
+    // Enable (for mobile)
+    if (mobile.matches) {
+      if (!init) {
+        init = true;
+        swiper = new Swiper(".swiper-container", {
+          slidesPerView: 1,
+          centeredSlides: true,
+          loop: true,
+          spaceBetween: 20,
+          watchSlidesVisibility: true,
+          loop: true,
+          direction: "horizontal",
+          grabCursor: true,
+          autoHeight: true,
 
-  //   setTimeout(() => {
-  //     promo.classList.add("promo--bg-2");
-  //   }, 1000);
-  // };
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    }
+
+    // Disable (for tablet)
+    else if (tablet.matches) {
+      for (let i = 0; i < swiper.length; i++) {
+        swiper[i].destroy();
+      }
+      init = false;
+    }
+  }
+
+  /* On Load
+   **************************************************************/
+  window.addEventListener("load", function () {
+    swiperMode();
+  });
+
+  /* On Resize
+   **************************************************************/
+  window.addEventListener("resize", function () {
+    swiperMode();
+  });
 });
