@@ -40,7 +40,11 @@ img {
 }
 
 .swiper-pagination {
-  position: static;
+  position: relative;
+  left: auto;
+  bottom: auto;
+  display: flex;
+  justify-content: center;
   margin-top: 4px;
 }
 
