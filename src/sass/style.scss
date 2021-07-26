@@ -1,5 +1,6 @@
 @import "../../node_modules/normalize.css/normalize";
 @import "../../node_modules/swiper/swiper-bundle.min";
+@import "../../node_modules/aos/dist/aos";
 @import "global/variables";
 @import "global/mixins";
 @import "global/fonts";
@@ -21,3 +22,4 @@
 @import "blocks/subscribe";
 @import "blocks/social";
 @import "blocks/footer";
+@import "blocks/error-page";

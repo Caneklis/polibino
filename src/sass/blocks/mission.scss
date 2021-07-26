@@ -8,10 +8,20 @@
   @media (min-width: 768px) {
     background-image: url("../images/mission-bg.png");
     background-repeat: no-repeat;
-    background-size: auto;
     background-position: left 94px;
-    padding-top: 668px;
+    padding-top: 550px;
     padding-bottom: 190px;
+    background-size: 700px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 668px;
+    background-size: 953px;
+  }
+
+  @media (min-width: 1500px) {
+    padding-top: 668px;
+    background-size: 1053px;
   }
 }
 

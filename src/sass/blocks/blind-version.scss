@@ -1,7 +1,18 @@
 .blind-version {
-  align-self: center;
+  padding-top: 11px;
 
   @media (max-width: 767px) {
     order: 4;
+    padding-top: 0;
+    align-self: center;
+  }
+
+  a {
+    color: #cecece;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $base-color;
+    }
   }
 }

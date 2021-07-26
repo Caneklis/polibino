@@ -1,9 +1,11 @@
 // import Swiper JS
 import Swiper from "swiper/bundle";
+import * as AOS from "aos/dist/aos.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // eslint-disable-next-line no-console
   console.log("DOM полностью загружен и разобран");
+  require("./modules/main-nav");
   require("./modules/main-nav");
 
   const header = document.querySelector(".header");
@@ -79,4 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", function () {
     swiperMode();
   });
+
+  AOS.init();
 });

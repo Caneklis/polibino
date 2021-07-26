@@ -18,11 +18,17 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  transition: all 0.3s ease;
 
   @media (max-width: 767px) {
     width: 40px;
     height: 40px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  &:hover {
+    color: $base-color;
+    border-color: $base-color;
   }
 }

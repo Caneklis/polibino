@@ -146,7 +146,7 @@
   font-size: 20px;
   line-height: 23px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 850px) {
     font-size: 13px;
     line-height: 38px;
   }
@@ -172,7 +172,7 @@
     border: 2px solid $blue-color;
     transition: all 0.3s ease;
 
-    @media (max-width: 767px) {
+    @media (max-width: 850px) {
       min-width: 120px;
       margin-left: 10px;
       font-weight: 500;
