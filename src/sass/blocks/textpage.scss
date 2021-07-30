@@ -586,16 +586,13 @@
     margin-bottom: 200px;
   }
 
-  // .swiper-wrapper {
-  //   height: auto;
-  //   width: 100%;
-  // }
+  &--no-mb {
+    margin-bottom: 0;
 
-  // .swiper-pagination {
-  //   position: absolute;
-  //   z-index: 10;
-  //   bottom: -60px;
-  // }
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
 
   .textpage__slider-contols {
     display: flex;
