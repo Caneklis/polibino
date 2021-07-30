@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,AAAC,CACb,UAAU,CAAE,MAAM,CACnB",
-    "sources": [
-        "../src/sass/blocks/blind-version.scss"
-    ],
-    "names": [],
-    "file": "blind-version.min.css"
-}

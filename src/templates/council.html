@@ -1,0 +1,111 @@
+---
+title: Управляющий совет
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<section class="page__main-header">
+  <h1 class="page__main-title">Управляющий <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;совет</h1>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="about.html">О фонде</a></li>
+      <li class="breadcrumbs__item"><a>{{ title }}</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="cards__wrapper">
+    <ul class="cards__list">
+      {% for i in range(0, 3) -%}
+      <li class="cards__list-item">
+        <div class="cards__item-photo">
+          <img src="//via.placeholder.com/300x254" alt="Описание фото">
+        </div>
+        <div class="cards__item-text">
+          <h2>Агафонова
+            Елена Владимировна</h2>
+          <p>Председатель Липецкого отделения
+            ВООПИиК, координатор волонтерских
+            проектов усадьбы Полибино</p>
+        </div>
+      </li>
+      <li class="cards__list-item">
+        <div class="cards__item-photo">
+          <img src="//via.placeholder.com/300x254" alt="Описание фото">
+        </div>
+        <div class="cards__item-text">
+          <h2>Найденов
+            Андрей Анатольевич</h2>
+          <p>Директор Государственной дирекции
+            культурного наследия Липецкой области,
+            учредитель Фонда «Усадьба Полибино»</p>
+        </div>
+      </li>
+      <li class="cards__list-item">
+        <div class="cards__item-photo">
+          <img src="//via.placeholder.com/300x254" alt="Описание фото">
+        </div>
+        <div class="cards__item-text">
+          <h2>Определенов
+            Владимир Викторович</h2>
+          <p>Заместитель директора по цифровому
+            развитию Государственного музея
+            изобразительных искусств
+            имени А.С. Пушкина</p>
+        </div>
+      </li>
+      <li class="cards__list-item">
+        <div class="cards__item-photo">
+          <img src="//via.placeholder.com/300x254" alt="Описание фото">
+        </div>
+        <div class="cards__item-text">
+          <h2>Девкина
+            Анна Николаевна</h2>
+          <p>Директор Фонда «Усадьба Полибино»</p>
+        </div>
+      </li>
+
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="page-section__wrapper">
+    <h2 class="page-section__subtitle">Вы также можете посмотреть</h2>
+
+    <ul class="page-section__list">
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-1.jpg" alt="Описание картинки">
+          <div class="page-section__name">Общая информация</div>
+        </a>
+      </li>
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-2.jpg" alt="Описание картинки">
+          <div class="page-section__name">Попечительский совет</div>
+        </a>
+      </li>
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-3.jpg" alt="Описание картинки">
+          <div class="page-section__name">Управляющий совет</div>
+        </a>
+      </li>
+    </ul>
+
+    <a class="page-section__back-link" href="#">
+      <svg aria-hidden="true" width="16" height="14">
+        <use href="images/sprite_auto.svg#icon-arrow"></use>
+      </svg>
+      О фонде
+    </a>
+  </div>
+</section>
+
+{% endblock %}

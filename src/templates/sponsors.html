@@ -1,0 +1,104 @@
+---
+title: Наши меценаты
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<section class="page__main-header">
+  <h1 class="page__main-title">{{ title }}</h1>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="about.html">О фонде</a></li>
+      <li class="breadcrumbs__item"><a>{{ title }}</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sponsors-page">
+  <div class="sponsors-page__wrapper">
+    <ul class="sponsors-page__list">
+      {% for i in range(1, 10) -%}
+      <li class="sponsors-page__list-item">
+        <article class="sponsors-page__item-card" data-popup-trigger="{{ i }}">
+          <div class="sponsors-page__item-photo">
+            <img src="//via.placeholder.com/190x230" alt="Описание фотографии">
+          </div>
+          <h2>Определенов
+            Владимир Викторович {{ i }}</h2>
+        </article>
+      </li>
+      {%- endfor %}
+    </ul>
+
+    <div class="sponsors-page__content">
+      {% for i in range(1, 10) -%}
+      <article class="sponsors-page__item-card-full" data-popup-modal="{{ i }}">
+        <button class="sponsors-page__item-card-close">
+          <div class="visually-hidden">Закрыть окно</div>
+          <svg class="main-nav__icon" aria-hidden="true" width="10" height="11">
+            <use href="images/sprite_auto.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="sponsors-page__item-photo">
+          <img src="//via.placeholder.com/190x230" alt="Описание фотографии">
+        </div>
+        <div class="sponsors-page__item-card-type">Меценат</div>
+        <div class="sponsors-page__item-title">
+          <h2>Определенов
+            Владимир Викторович {{ i }}</h2>
+          <p>Заместитель директора по цифровому
+            развитию Государственного музея
+            изобразительных искусств
+            имени А.С. Пушкина</p>
+        </div>
+        <div class="sponsors-page__item-card-text">
+          <p>Повседневная практика показывает, что высококачественный прототип будущего проекта позволяет выполнить
+            важные задания по разработке анализа существующих паттернов поведения. В своём стремлении улучшить
+            пользовательский опыт мы упускаем, что тщательные исследования конкурентов описаны максимально подробно.
+            Значимость этих проблем настолько очевидна, что разбавленное изрядной долей эмпатии.</p>
+          <p><a href="https://www.hse.ru/staff/opredelenov">https://www.hse.ru/staff/opredelenov</a></p>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="page-section__wrapper">
+    <h2 class="page-section__subtitle">Вы также можете посмотреть</h2>
+
+    <ul class="page-section__list">
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-1.jpg" alt="Описание картинки">
+          <div class="page-section__name">Общая информация</div>
+        </a>
+      </li>
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-2.jpg" alt="Описание картинки">
+          <div class="page-section__name">Попечительский совет</div>
+        </a>
+      </li>
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-3.jpg" alt="Описание картинки">
+          <div class="page-section__name">Управляющий совет</div>
+        </a>
+      </li>
+    </ul>
+
+    <a class="page-section__back-link" href="#">
+      <svg aria-hidden="true" width="16" height="14">
+        <use href="images/sprite_auto.svg#icon-arrow"></use>
+      </svg>
+      О фонде
+    </a>
+  </div>
+</section>
+
+{% endblock %}

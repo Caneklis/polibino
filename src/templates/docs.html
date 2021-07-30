@@ -1,0 +1,106 @@
+---
+title: Документы и отчетность
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<div class="body-blackout"></div>
+
+<div class="tooltip-content">
+</div>
+
+<section class="page__main-header">
+  <h1 class="page__main-title">{{title}}</h1>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="about.html">О фонде</a></li>
+      <li class="breadcrumbs__item"><a>{{title}}</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="textpage">
+  <div class="textpage__wrapper">
+
+    <article class="textpage__article  textpage__article--no-mb">
+      <!-- <div class="textpage__photo-content  swiper-container">
+        <div class="textpage__photos  swiper-wrapper">
+          <div class="textpage__photo-item  swiper-slide">
+            <img src="images/textpage-pic-1.jpg" alt="Описание к картинке">
+          </div>
+          <div class="textpage__photo-item  swiper-slide">
+            <img src="images/textpage-pic-2.jpg" alt="Описание к картинке">
+          </div>
+          <div class="textpage__photo-item  swiper-slide">
+            <img src="images/textpage-pic-3.jpg" alt="Описание к картинке">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div> -->
+
+      <div class="textpage__text-block">
+        <p>Являясь всего лишь частью общей картины, сделанные на базе интернет-аналитики выводы набирают популярность
+          среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных.</p>
+        <div class="download-block">
+          <ul>
+            <li><a href="#" download>Устав организации</a></li>
+            <li><a href="#" download>Свидетельство о государственной регистрации некоммерческой организации</a></li>
+            <li><a href="#" download>Свидетельство о внесении организации в ЕГРЮЛ</a></li>
+            <li><a href="#" download>Свидетельство о постановке на учет в ФНС</a></li>
+          </ul>
+          <p>Отчеты фонда</p>
+          <ul>
+            <li><a href="#" download>Отчет о работе фонда за 2021 год</a></li>
+            <li><a href="#" download>Отчет о работе фонда за 2021 год</a></li>
+          </ul>
+          <p>Отчеты фонда</p>
+          <ul>
+            <li><a href="#" download>Отчет о работе фонда за 2021 год</a></li>
+            <li><a href="#" download>Отчет о работе фонда за 2021 год</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<section class="page-section">
+  <div class="page-section__wrapper">
+    <h2 class="page-section__subtitle">Вы также можете посмотреть</h2>
+
+    <ul class="page-section__list">
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-1.jpg" alt="Описание картинки">
+          <div class="page-section__name">Общая информация</div>
+        </a>
+      </li>
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-2.jpg" alt="Описание картинки">
+          <div class="page-section__name">Попечительский совет</div>
+        </a>
+      </li>
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-3.jpg" alt="Описание картинки">
+          <div class="page-section__name">Управляющий совет</div>
+        </a>
+      </li>
+    </ul>
+
+    <a class="page-section__back-link" href="#">
+      <svg aria-hidden="true" width="16" height="14">
+        <use href="images/sprite_auto.svg#icon-arrow"></use>
+      </svg>
+      О фонде
+    </a>
+  </div>
+</section>
+
+{% endblock %}

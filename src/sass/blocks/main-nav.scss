@@ -5,12 +5,12 @@
   justify-content: space-between;
   padding-top: 45px;
   padding-bottom: 35px;
-  overflow: hidden;
   position: relative;
 
   @media (max-width: 767px) {
     padding-top: 18px;
     padding-bottom: 18px;
+    overflow: hidden;
   }
 }
 
@@ -151,6 +151,13 @@
     &:last-child {
       padding-bottom: 0;
     }
+
+    &:hover {
+      &::after {
+        transform: rotateY(-180deg);
+        filter: grayscale(0) brightness(1);
+      }
+    }
   }
 
   &:hover {
@@ -189,6 +196,7 @@
 .main-nav__subitem {
   border: 1px solid $base-color;
   border-top: none;
+  font-weight: 400;
 
   &:first-child {
     border-top: 1px solid $base-color;
@@ -253,6 +261,10 @@
     align-items: center;
     padding-top: 33px;
     margin-bottom: 25px;
+
+    .donate {
+      margin-bottom: 30px;
+    }
   }
 }
 

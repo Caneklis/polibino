@@ -6,10 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // eslint-disable-next-line no-console
   console.log("DOM полностью загружен и разобран");
   require("./modules/main-nav");
-  require("./modules/main-nav");
+  require("./modules/popup");
 
   const header = document.querySelector(".header");
-  console.log(header);
   let scrollPrev = 0;
 
   window.addEventListener("scroll", () => {
@@ -56,6 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
+            type: "fraction",
+          },
+
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
           },
         });
       }
@@ -89,6 +94,12 @@ document.addEventListener("DOMContentLoaded", () => {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      type: "fraction",
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
 
     breakpoints: {
@@ -156,4 +167,99 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   findVideos();
+
+  const tooltips = Array.from(document.querySelectorAll(".tooltip"));
+  const tooltipContainer = document.querySelector(".tooltip-content");
+
+  let tooltipID;
+  tooltips.forEach((tooltip) => {
+    if (tooltip) {
+      tooltip.addEventListener("mouseenter", (e) => {
+        tooltipID = e.target.getAttribute("data-id");
+        tooltipContainer.classList.add("tooltip-content--fade-in");
+        tooltipContainer.style.left = `${e.pageX}px`;
+        tooltipContainer.style.top = `${e.pageY}px`;
+        tooltipContainer.innerHTML = tooltipData[tooltipID - 1].txt;
+      });
+
+      tooltip.addEventListener("mouseout", (e) => {
+        tooltipContainer.classList.remove("tooltip-content--fade-in");
+      });
+    }
+  });
+
+  if (tooltipContainer) {
+    tooltipContainer.addEventListener("mouseenter", () => {
+      tooltipContainer.classList.add("tooltip-content--fade-in");
+    });
+    tooltipContainer.addEventListener("mouseout", () => {
+      tooltipContainer.classList.remove("tooltip-content--fade-in");
+    });
+  }
+
+  const sponsors = document.querySelectorAll(".sponsors-page__item-card");
+
+  const sponsorsDescriptions = document.querySelectorAll(
+    ".sponsors-page__item-card-full"
+  );
+
+  sponsors.forEach((sponsor) => {
+    if (sponsor) {
+      sponsor.addEventListener("click", () => {
+        const body = document.querySelector("body");
+        const { popupTrigger } = sponsor.dataset;
+        const popupModal = document.querySelector(
+          `[data-popup-modal="${popupTrigger}"]`
+        );
+        sponsors.forEach((item) => {
+          item.classList.remove("sponsors-page__item-card--active");
+        });
+
+        sponsor.classList.add("sponsors-page__item-card--active");
+        sponsorsDescriptions.forEach((item) => {
+          item.classList.remove("is--visible");
+        });
+
+        popupModal.classList.add("is--visible");
+      });
+
+      // sponsor.addEventListener("mouseover", () => {
+      //   const body = document.querySelector("body");
+      //   const { popupTrigger } = sponsor.dataset;
+      //   const popupModal = document.querySelector(
+      //     `[data-popup-modal="${popupTrigger}"]`
+      //   );
+
+      //   popupModal.classList.add("is--visible");
+      // });
+
+      // sponsor.addEventListener("mouseleave", () => {
+      //   const body = document.querySelector("body");
+      //   const { popupTrigger } = sponsor.dataset;
+      //   const popupModal = document.querySelector(
+      //     `[data-popup-modal="${popupTrigger}"]`
+      //   );
+
+      //   popupModal.classList.remove("is--visible");
+      // });
+    }
+  });
+
+  const closeSponsorsDesription = document.querySelectorAll(
+    ".sponsors-page__item-card-close"
+  );
+
+  closeSponsorsDesription.forEach((item) => {
+    if (item) {
+      item.addEventListener("click", () => {
+        sponsorsDescriptions.forEach((item) => {
+          item.classList.remove("is--visible");
+        });
+
+        sponsors.forEach((item) => {
+          item.classList.remove("sponsors-page__item-card--active");
+        });
+      });
+    }
+  });
 });

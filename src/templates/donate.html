@@ -1,0 +1,68 @@
+---
+title: Контакты | Пожертвовать
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<section class="donate">
+  <div class="donate__header">
+    <div class="donate__wrapper">
+      <h2 class="donate__title">Реквизиты
+        <span>для юридических лиц</span>
+      </h2>
+    </div>
+  </div>
+
+  <div class="donate__content">
+    <div class="donate__wrapper">
+      <div class="donate__requisites-block">
+        <div class="donate__requisites">
+          <table>
+            <tr>
+              <td>БИК</td>
+              <td>044206604</td>
+            </tr>
+            <tr>
+              <td>Наименование банка</td>
+              <td>ПАО Сбербанк</td>
+            </tr>
+            <tr>
+              <td>Корреспондентский счет</td>
+              <td>30101810800000000604</td>
+            </tr>
+            <tr>
+              <td>Расчетный счет</td>
+              <td>40703810635000001260</td>
+            </tr>
+            <tr>
+              <td>Наименование получателя</td>
+              <td>ФОНД СОХРАНЕНИЯ
+                И РАЗВИТИЯ УСАДЬБЫ “ПОЛИБИНО”</td>
+            </tr>
+            <tr>
+              <td>ИНН получателя</td>
+              <td>4825143208</td>
+            </tr>
+            <tr>
+              <td>Отделение банка</td>
+              <td>г. Липецк, пр-т имени 60-летия СССР, 2Б</td>
+            </tr>
+          </table>
+        </div>
+
+        <a href="#" class="donate__download-link">
+          Скачать реквизиты
+          <svg aria-hidden="true" width="10" height="14">
+            <use href="/images/sprite_auto.svg#icon-download"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

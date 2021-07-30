@@ -1,3 +1,35 @@
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b8b8b8;
+  transition: all 0.3s ease;
+
+  &--inst {
+    &:hover {
+      color: $blue-color;
+    }
+  }
+
+  &--trip {
+    &:hover {
+      color: $green-color;
+    }
+  }
+
+  &--vk {
+    &:hover {
+      color: $brown;
+    }
+  }
+
+  &--fb {
+    &:hover {
+      color: $light-green-color;
+    }
+  }
+}
+
 .social__list {
   @include list-reset;
   display: flex;
@@ -72,37 +104,11 @@
         }
       }
     }
-  }
-}
 
-.social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #b8b8b8;
-  transition: all 0.3s ease;
-
-  &--inst {
-    &:hover {
-      color: $blue-color;
-    }
-  }
-
-  &--trip {
-    &:hover {
-      color: $green-color;
-    }
-  }
-
-  &--vk {
-    &:hover {
-      color: $brown;
-    }
-  }
-
-  &--fb {
-    &:hover {
-      color: $light-green-color;
+    .social__link {
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }

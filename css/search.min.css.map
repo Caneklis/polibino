@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,AAAC,CACN,UAAU,CAAE,MAAM,CAClB,MAAM,CAAE,MAAM,CAIf,AAND,AAGE,OAHK,CAGL,KAAK,AAAC,CACJ,OAAO,CAAE,IAAI,CACd,AAGH,AAAA,YAAY,AAAC,CACX,gBAAgB,CAAE,IAAI,CACtB,MAAM,CAAE,IAAI,CACb",
-    "sources": [
-        "../src/sass/blocks/search.scss"
-    ],
-    "names": [],
-    "file": "search.min.css"
-}

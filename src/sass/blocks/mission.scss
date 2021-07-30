@@ -1,5 +1,5 @@
 .mission {
-  padding-top: 215px;
+  padding-top: 235px;
   padding-bottom: 40px;
   background-image: url("../images/mission-bg-mobile.png");
   background-repeat: no-repeat;
@@ -53,6 +53,7 @@
 }
 
 .mission__link {
+  position: relative;
   align-self: flex-end;
   font-size: 20px;
   line-height: 38px;
@@ -72,6 +73,24 @@
 
     svg {
       width: 9px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &:hover {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        mask-image: url("../images/stroke.svg");
+        mask-repeat: no-repeat;
+        background-color: $green-color;
+        background-size: contain;
+        display: block;
+        width: 238px;
+        height: 21px;
+      }
     }
   }
 }

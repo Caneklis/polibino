@@ -1,8 +1,16 @@
 .contacts {
   padding-bottom: 445px;
 
+  &--padding-top {
+    padding-top: 150px;
+  }
+
   @media (max-width: 767px) {
     padding-bottom: 130px;
+
+    &--padding-top {
+      padding-top: 100px;
+    }
   }
 }
 
@@ -104,10 +112,11 @@
     }
 
     &::after {
-      top: 80px;
+      top: 132px;
       right: 0;
-      width: 80px;
+      width: 68px;
       height: 217px;
+      background-size: 100%;
     }
   }
 
@@ -129,11 +138,12 @@
 .contacts__map-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
-  border-top-left-radius: 125px;
-  border-bottom-right-radius: 125px;
-  border: 2px solid $base-color;
+  height: 200px;
+  border: 1px solid $base-color;
   overflow: hidden;
+  z-index: 1;
+  border-top-left-radius: 55px;
+  border-bottom-right-radius: 55px;
 
   iframe {
     position: absolute;
@@ -144,6 +154,14 @@
     width: 100%;
     height: 100%;
   }
+
+  @media (min-width: 768px) {
+    height: 450px;
+    border-top-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+
+    border: 2px solid $base-color;
+  }
 }
 
 .contacts__link {
@@ -152,6 +170,7 @@
 }
 
 .contacts__learn-more {
+  position: relative;
   display: inline-flex;
   align-items: center;
   margin-top: 90px;
@@ -161,6 +180,24 @@
 
   svg {
     margin-left: 16px;
+  }
+
+  @media (min-width: 768px) {
+    &:hover {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        mask-image: url("../images/stroke.svg");
+        mask-repeat: no-repeat;
+        background-color: $green-color;
+        background-size: contain;
+        display: block;
+        width: 238px;
+        height: 21px;
+      }
+    }
   }
 }
 

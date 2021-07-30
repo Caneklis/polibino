@@ -74,10 +74,39 @@
       align-items: center;
       background-color: $green-color;
       color: #fff;
+      position: relative;
+      outline: 2px solid $green-color;
+      outline-offset: -2px;
+      transition: all 0.3s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $green-color;
+        opacity: 0;
+        mask-image: url(../images/sprite/icon-arrow-hover.svg);
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 40px;
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+      }
 
       svg {
         margin-right: 20px;
         transform: rotate(180deg);
+      }
+
+      &:hover {
+        background-color: #fff;
+
+        &::before {
+          opacity: 1;
+        }
       }
     }
   }
@@ -96,6 +125,7 @@
   color: $base-color;
   background-color: #fff;
   justify-content: flex-end;
+  border: 1px solid $base-color;
 
   @media (min-width: 768px) {
     display: none;

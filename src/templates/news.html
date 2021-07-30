@@ -1,0 +1,129 @@
+---
+title: Новости и события
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<div class="body-blackout"></div>
+
+<div class="tooltip-content">
+</div>
+
+<section class="page__main-header">
+  <h1 class="page__main-title">{{title}}</h1>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="about.html">О фонде</a></li>
+      <li class="breadcrumbs__item"><a>{{title}}</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="news-page">
+  <div class="news-page__wrapper">
+    <ul class="news-page__list">
+      {% for i in range(1, 10) -%}
+      <li class="news-page__item">
+        <article class="news-page__article">
+          <div class="news-page__item-type">Проект</div>
+          <time class="news-page__item-date" datetime="2021-07-15">15.07.2021, чт</time>
+
+          <h3 class="news-page__item-title"><a href="#">Началась реставрация фасада усадьбы Полибино</a></h3>
+          <div class="news-page__lead">
+            <p>Краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст
+              краткий
+              текст краткий текст краткий текст краткий текст краткий текст краткий текст краткий текст.</p>
+          </div>
+          <div class="news-page__item-photo">
+            <a href="#">
+              <img src="//via.placeholder.com/410x340x" width="280" height="232" loading="lazy"
+                alt="Фотография к новости">
+            </a>
+          </div>
+
+          <div class="news-page__links">
+            <a class="news-page__link  news-page__link--bg  news-page__link--blue" href="#">
+              Поддержать
+              <svg aria-hidden="true" width="10" height="8">
+                <use href="/images/sprite_auto.svg#icon-arrow"></use>
+              </svg>
+            </a>
+            <a class="news-page__link" href="#">
+              Читать
+              <svg aria-hidden="true" width="10" height="8">
+                <use href="/images/sprite_auto.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </li>
+      {%- endfor %}
+    </ul>
+
+    <div class="pagination">
+      <a class="pagination__load-more" href="#">Загрузить еще</a>
+      <ul class="pagination__list">
+        <li class="pagination__item"><a class="pagination__link  pagination__link--disabled" href="#">
+            <span class="visually-hidden">Назад</span>
+            <svg width="5" height="11" viewBox="0 0 5 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.00168874 4.99831C0.00136283 4.8315 0.059458 4.66985 0.16589 4.5414L3.73547 0.257904C3.85665 0.11211 4.03079 0.020426 4.21956 0.00302091C4.40834 -0.0143842 4.5963 0.0439156 4.7421 0.165095C4.88789 0.286274 4.97957 0.460406 4.99698 0.649185C5.01438 0.837963 4.95608 1.02592 4.83491 1.17172L1.63656 4.99831L4.72068 8.82491C4.77998 8.89793 4.82427 8.98196 4.85099 9.07215C4.87771 9.16235 4.88635 9.25693 4.87639 9.35048C4.86644 9.44402 4.8381 9.53468 4.793 9.61723C4.7479 9.69979 4.68693 9.77261 4.61359 9.83153C4.54018 9.89691 4.45407 9.94642 4.36063 9.97697C4.2672 10.0075 4.16847 10.0185 4.07061 10.0091C3.97276 9.99968 3.8779 9.9702 3.79198 9.92245C3.70605 9.8747 3.63092 9.80972 3.57127 9.73158L0.123055 5.44808C0.0334468 5.31594 -0.00928477 5.15759 0.00168874 4.99831Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </li>
+        <li class="pagination__item"><a class="pagination__link  pagination__link--active" href="#">1</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">
+            <span class="visually-hidden">Вперед</span>
+            <svg width="5" height="11" viewBox="0 0 5 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.99831 5.01438C4.99864 5.18119 4.94054 5.34285 4.83411 5.47129L1.26453 9.75479C1.14335 9.90058 0.969215 9.99227 0.780437 10.0097C0.591658 10.0271 0.403697 9.96878 0.257904 9.8476C0.11211 9.72642 0.0204261 9.55229 0.00302096 9.36351C-0.0143841 9.17473 0.0439153 8.98677 0.165095 8.84098L3.36344 5.01438L0.279322 1.18779C0.22002 1.11477 0.175734 1.03074 0.149011 0.940544C0.122288 0.850348 0.113654 0.755761 0.123605 0.662218C0.133557 0.568675 0.161897 0.47802 0.206998 0.395465C0.252099 0.31291 0.313071 0.240082 0.386409 0.181168C0.459815 0.115788 0.545932 0.0662708 0.639365 0.0357208C0.732798 0.00516988 0.831533 -0.00575446 0.929385 0.00362779C1.02724 0.013011 1.1221 0.0425005 1.20802 0.0902491C1.29395 0.137999 1.36908 0.202978 1.42873 0.281117L4.87695 4.56462C4.96655 4.69675 5.00928 4.85511 4.99831 5.01438Z"
+                fill="currentColor" />
+            </svg>
+
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="page-section">
+  <div class="page-section__wrapper">
+    <h2 class="page-section__subtitle">Вы также можете посмотреть</h2>
+
+    <ul class="page-section__list">
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-1.jpg" alt="Описание картинки">
+          <div class="page-section__name">Общая информация</div>
+        </a>
+      </li>
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-2.jpg" alt="Описание картинки">
+          <div class="page-section__name">Попечительский совет</div>
+        </a>
+      </li>
+      <li class="page-section__item">
+        <a href="#" class="page-section__link">
+          <img src="/images/page-section-pic-3.jpg" alt="Описание картинки">
+          <div class="page-section__name">Управляющий совет</div>
+        </a>
+      </li>
+    </ul>
+
+    <a class="page-section__back-link" href="#">
+      <svg aria-hidden="true" width="16" height="14">
+        <use href="images/sprite_auto.svg#icon-arrow"></use>
+      </svg>
+      О фонде
+    </a>
+  </div>
+</section>
+
+{% endblock %}

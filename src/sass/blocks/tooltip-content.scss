@@ -1,0 +1,50 @@
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: $green-color;
+}
+
+.tooltip-content {
+  width: 320px;
+  height: auto;
+  padding: 15px 15px 18px 20px;
+  font-size: 14px;
+  background: #edfcff;
+  border: 1px solid $base-color;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  opacity: 0;
+
+  p {
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    color: #a4a4a4;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.tooltip-content--fade-in {
+  display: block;
+  animation: fadein 0.2s linear forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

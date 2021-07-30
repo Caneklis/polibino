@@ -1,9 +1,14 @@
-
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" stroke="#979797">
-            <circle id="Oval" fill="#FF6347" cx="256" cy="256" r="255.5"></circle>
-            <polygon id="Path" fill="#FFFFFF" points="167.099262 408.012627 167.099262 105.084067 345.229162 105.084067 341.397619 136.467149 205.7295 136.467149 205.7295 241.72296 323.36877 241.72296 323.36877 273.454977 205.7295 273.454977 205.7295 408.012627"></polygon>
-        </g>
-    </g>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M21.6231 56.2207H18.2081C12.7427 56.2207 8.31445 51.7924 8.31445 46.3271V9.55386H21.6231V56.2207Z" fill="#414141"/>
+<path d="M37.9804 56.2162H51.2891L51.2891 20.1045H37.9804V56.2162Z" fill="#414141"/>
+<path d="M55.0945 16.688V13.2729C55.0945 7.80758 50.6662 3.3793 45.2009 3.3793H25.0322V6.79438C25.0322 12.2597 29.4605 16.688 34.9258 16.688H55.0945Z" fill="#414141"/>
+<path d="M21.6227 3.46277H4.46387V10.5969H21.6227V3.46277Z" fill="#414141"/>
+<path d="M55.1359 49.0806H37.9771V56.2148H55.1359V49.0806Z" fill="#414141"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="59.6" height="59.6" fill="white"/>
+</clipPath>
+</defs>
 </svg>

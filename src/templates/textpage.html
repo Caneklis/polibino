@@ -5,19 +5,24 @@ description: Description index
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
+<div class="body-blackout"></div>
+
+<div class="tooltip-content">
+</div>
+
+<section class="page__main-header">
+  <h1 class="page__main-title">Общая <br>информация</h1>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="about.html">О фонде</a></li>
+      <li class="breadcrumbs__item"><a>Общая информация</a></li>
+    </ul>
+  </div>
+</section>
 
 <section class="textpage">
   <div class="textpage__wrapper">
-    <div class="textpage__header">
-      <h1 class="textpage__title">Общая <br>информация</h1>
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="about.html">О фонде</a></li>
-          <li class="breadcrumbs__item"><a>Общая информация</a></li>
-        </ul>
-      </div>
-    </div>
 
     <article class="textpage__info">
       <div class="textpage__info-photo">
@@ -34,7 +39,14 @@ description: Description index
       </div>
 
       <div class="textpage__text-block">
-        <p>Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке
+        <p>Таким образом укрепление <span class="tooltip" data-id="1"><sup>
+              <span class="visually-hidden">Всплывающая подсказка</span><svg aria-hidden="true" width="18" height="18">
+                <use href="images/sprite_auto.svg#icon-i"></use>
+              </svg>
+            </sup></span> и развитие структуры
+          позволяет
+          выполнять
+          важные задания по разработке
           соответствующий
           условий активизации. С другой стороны сложившаяся структура организации играет важную роль в формировании
           соответствующий условий активизации. Разнообразный и богатый опыт рамки и место обучения кадров способствует
@@ -44,6 +56,64 @@ description: Description index
           исключительно синтетически, объявлены нарушающими общечеловеческие нормы этики и морали. Учитывая ключевые
           сценарии поведения, дальнейшее развитие различных форм деятельности обеспечивает актуальность глубокомысленных
           рассуждений. </p>
+
+        <p>Всплывающие окна</p>
+        <ul>
+          <li>
+            <p><a class="btn  popup-trigger" data-popup-trigger="modal-1">я просто текст</a></p>
+          </li>
+          <li>
+            <p><a class="btn  popup-trigger" data-popup-trigger="modal-2">я с медиаконтентом внутри</a></p>
+          </li>
+        </ul>
+
+        <section data-popup-modal="modal-1" class="popup-modal">
+          <button class=" popup-modal__close" type="button">
+            <svg class="main-nav__icon" aria-hidden="true" width="10" height="11">
+              <use class="main-nav__icon-cross" href="images/sprite_auto.svg#cross"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+
+          <div class="popup__content">
+            <p>Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке
+              соответствующий условий активизации. С другой стороны сложившаяся структура организации играет важную роль
+              в формировании соответствующий условий активизации. Разнообразный и богатый опыт рамки и место обучения
+              кадров способствует подготовки и реализации дальнейших направлений развития. </p>
+            <p>С другой стороны сложившаяся структура организации играет важную роль в формировании соответствующий
+              условий активизации. Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
+              реализации дальнейших направлений развития.</p>
+          </div>
+        </section>
+
+        <section data-popup-modal="modal-2" class="popup-modal">
+          <button class=" popup-modal__close" type="button">
+            <svg class="main-nav__icon" aria-hidden="true" width="10" height="11">
+              <use class="main-nav__icon-cross" href="images/sprite_auto.svg#cross"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+
+          <div class="popup__content">
+            <div class="video">
+              <a class="video__link" href="https://youtu.be/RV7Ur2ACA5E">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/RV7Ur2ACA5E/maxresdefault.webp" type="image/webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/RV7Ur2ACA5E/maxresdefault.jpg"
+                    alt="Арт-кластер Таврида 2021 - Место Силы">
+                </picture>
+              </a>
+              <button class="video__button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48">
+                  <path class="video__button-shape"
+                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                  </path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </article>
 
@@ -63,10 +133,17 @@ description: Description index
           </div>
         </div>
         <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
 
       <div class="textpage__text-block">
-        <p>Учитывая ключевые сценарии поведения, укрепление и развитие внутренней структуры однозначно фиксирует
+        <p>Учитывая ключевые <span class="tooltip" data-id="2"><sup>
+              <span class="visually-hidden">Всплывающая подсказка</span><svg aria-hidden="true" width="18" height="18">
+                <use href="images/sprite_auto.svg#icon-i"></use>
+              </svg>
+            </sup></span> сценарии поведения, укрепление
+          и развитие внутренней структуры однозначно фиксирует
           необходимость благоприятных перспектив. Являясь всего лишь частью общей картины, сделанные на базе
           интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть
           объединены в целые кластеры себе подобных. А ещё сторонники тоталитаризма в науке, вне зависимости от их
@@ -122,9 +199,10 @@ description: Description index
           исключительно образом мышления.</p>
       </div>
     </article>
+  </div>
 
+  <section class="textpage__slider-section">
     <div class="textpage__slider">
-
       <div class="textpage__slider-wrapper  swiper-wrapper">
         <div class="textpage__slider-item  swiper-slide">
           <img src="//via.placeholder.com/410x295" alt="Описание к картинке">
@@ -145,9 +223,17 @@ description: Description index
           <img src="//via.placeholder.com/410x295" alt="Описание к картинке">
         </div>
       </div>
-
-      <div class="swiper-pagination"></div>
+      <div class="textpage__slider-contols">
+        <!-- <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-next"></div> -->
+      </div>
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </section>
+
+  <div class="textpage__wrapper">
 
     <div class="textpage__full-picture">
       <!-- Если под фото будет описание -->
@@ -294,5 +380,29 @@ description: Description index
     </div>
   </div>
 </section>
+
+{% include "partials/_progress.html" %}
+
+<script>
+  const tooltipData = [
+    {
+      id: 1,
+      txt:
+        `
+          <div class="tooptip-content__text">
+            <p>Учитывая ключевые сценарии поведения, укрепление и развитие внутренней структуры однозначно фиксирует необходимость благоприятных перспектив. Сделанные на базе интернет-аналитики выводы набирают популярность.</p>
+          </div>
+        `,
+    },
+    {
+      id: 2,
+      txt:
+        `<div class="tooptip-content__text">
+            <p>11111Учитывая ключевые сценарии поведения, укрепление и развитие внутренней структуры однозначно фиксирует необходимость благоприятных перспектив. Сделанные на базе интернет-аналитики выводы набирают популярность.</p>
+          </div>
+        `,
+    }
+  ];
+</script>
 
 {% endblock %}
