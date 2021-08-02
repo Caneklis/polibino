@@ -1,3 +1,15 @@
+.textpage {
+  @media (min-width: 768px) {
+    background: linear-gradient(
+      90deg,
+      rgba(243, 245, 245, 1) 0%,
+      rgba(243, 245, 245, 1) 37%,
+      rgba(255, 255, 255, 1) 37%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}
+
 .textpage__wrapper {
   @include wrapper;
   display: flex;
@@ -279,6 +291,21 @@
 
   @media (min-width: 768px) {
     margin: 0;
+
+    position: relative;
+    overflow: inherit;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: block;
+      width: 1000%;
+      height: 100%;
+      background-color: red;
+    }
   }
 
   .swiper-button-next {

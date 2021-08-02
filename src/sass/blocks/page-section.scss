@@ -33,6 +33,14 @@
   @media (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  @media (max-width: 767px) {
+    .page-section__item {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
 }
 
 .page-section__item {

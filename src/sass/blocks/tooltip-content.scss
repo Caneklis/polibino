@@ -4,6 +4,13 @@
   justify-content: center;
   align-items: center;
   color: $green-color;
+
+  @media (max-width: 767px) {
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
 }
 
 .tooltip-content {
@@ -26,6 +33,11 @@
     /* or 150% */
 
     color: #a4a4a4;
+
+    @media (max-width: 767px) {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 
   img {

@@ -1,0 +1,130 @@
+.press-page__wrapper {
+  @include wrapper;
+}
+
+.press-page__list {
+  @include list-reset;
+}
+
+.press-page__item-title {
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #414141;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $green-color;
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-column: col 5 / span 8;
+    order: 3;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.press-page__article {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $base-color;
+
+  @media (min-width: 768px) {
+    border-width: 2px;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    align-items: flex-start;
+    column-gap: 30px;
+  }
+}
+
+.press-page__item-date {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  @media (min-width: 768px) {
+    grid-column: col 5 / span 8;
+    order: 2;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.press-page__lead {
+  margin-bottom: 21px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    grid-column: col 5 / span 8;
+    order: 4;
+    margin-bottom: 24px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 27px;
+  }
+}
+
+.press-page__item-photo {
+  margin-bottom: 6px;
+  border: 1px solid $base-color;
+
+  @media (min-width: 768px) {
+    grid-column: col / span 3;
+    grid-row: 1/5;
+    order: 1;
+    margin: 0;
+    border-width: 2px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: fill;
+  }
+}
+
+.press-page__links {
+  grid-column: col 5 / span 8;
+  order: 5;
+}
+
+.press-page__link {
+  display: inline-flex;
+  align-items: center;
+  color: $green-color;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 38px;
+
+  svg {
+    margin-left: 8px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 38px;
+
+    svg {
+      width: 16px;
+      height: 14px;
+    }
+  }
+}
