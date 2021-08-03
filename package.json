@@ -12,7 +12,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig & npm run stylelint & eslint src/js/",
-    "start": "cross-env NODE_ENV=development gulp start",
+    "start": "cross-env NODE_ENV=production gulp start",
     "deploy": "gh-pages -d build"
   },
   "author": "",

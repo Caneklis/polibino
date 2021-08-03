@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!init) {
         init = true;
         swiper = new Swiper(".swiper-container", {
-          slidesPerView: 1,
           centeredSlides: true,
+          slidesPerView: "auto",
           loop: true,
           spaceBetween: 20,
           watchSlidesVisibility: true,

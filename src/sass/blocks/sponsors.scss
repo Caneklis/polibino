@@ -233,7 +233,16 @@
 // }
 
 .sponsors__item {
+  width: auto;
   margin-bottom: 80px;
+}
+
+.sponsors__item-article {
+  width: 260px;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
 }
 
 .sponsors__item-photo {
