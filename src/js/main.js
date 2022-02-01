@@ -1,6 +1,8 @@
 // import Swiper JS
 import Swiper from "swiper/bundle";
 import * as AOS from "aos/dist/aos.js";
+import "./modules/custom-select.js";
+import { initPhoneMask } from "./modules/phone-mask.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // eslint-disable-next-line no-console
@@ -262,4 +264,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  initPhoneMask();
 });
