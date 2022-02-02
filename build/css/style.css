@@ -3468,7 +3468,7 @@ img {
 .donate__requisites {
   max-width: 440px;
   margin-right: auto;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   margin-left: auto;
   padding-top: 20px;
   padding-right: 10px;
@@ -3481,7 +3481,7 @@ img {
 @media (min-width: 768px) {
   .donate__requisites {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding-right: 20px;
 
     border-width: 2px;
@@ -3524,20 +3524,28 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 300px;
   margin: 0 auto;
-  padding: 14px 20px 14px 25px;
+  padding: 0 20px 0 30px;
 
-  font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  color: #ffffff;
+  color: #414141;
 
-  background-color: #3b8f9e;
+  background-color: #ffffff;
+  border: 2px solid #414141;
 
-  transition: all 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
-.donate__download-link svg {
-  margin-left: 30px;
+.donate__download-link span {
+  max-width: 210px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+
+  text-align: center;
+
+  border-right: 2px solid #414141;
 }
 @media (min-width: 768px) {
   .donate__download-link svg {
@@ -3547,7 +3555,6 @@ img {
 }
 @media (min-width: 768px) {
   .donate__download-link {
-    max-width: 300px;
     margin: 0;
   }
 }
@@ -8077,6 +8084,8 @@ iframe {
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 60px 50px;
+
+    border: 2px solid #414141;
   }
 }
 
@@ -8387,11 +8396,11 @@ iframe {
 }
 @media (min-width: 768px) {
   .donate-form__btn {
-    width: 300px;
+    width: 190px;
     max-width: 300px;
     margin: 0;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 14px;
+    padding-left: 34px;
 
     font-weight: 500;
     font-size: 20px;

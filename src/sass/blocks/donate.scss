@@ -182,7 +182,7 @@
 
 .donate__requisites {
   max-width: 440px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
@@ -196,7 +196,7 @@
     border-width: 2px;
     padding-right: 20px;
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 
   table {
@@ -237,17 +237,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 300px;
   margin: 0 auto;
-  padding: 14px 20px 14px 25px;
-  font-weight: 500;
+  padding: 0 20px 0 30px;
   font-size: 20px;
   line-height: 23px;
-  background-color: $green-color;
-  color: #fff;
-  transition: all 0.3s ease;
+  background-color: #fff;
+  color: $base-color;
+  border: 2px solid $base-color;
+  transition: $transition;
+
+  span {
+    text-align: center;
+    max-width: 210px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+    border-right: 2px solid $base-color;
+  }
 
   svg {
-    margin-left: 30px;
+    // margin-left: 30px;
 
     @media (min-width: 768px) {
       width: 18px;
@@ -256,7 +266,6 @@
   }
 
   @media (min-width: 768px) {
-    max-width: 300px;
     margin: 0;
   }
 
