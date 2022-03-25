@@ -12,6 +12,17 @@
       background-size: cover;
     }
   }
+
+  &--complete {
+    overflow: visible;
+    min-height: 576px;
+    margin-top: 45px;
+    background-image: url("../images/donate-complete-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border-top: 2px solid #414141;
+  }
 }
 
 .donate__grid {
@@ -144,6 +155,8 @@
 
 .donate__wrapper {
   @include wrapper;
+  position: relative;
+  z-index: 2;
 }
 
 .donate__title {
@@ -280,4 +293,82 @@
     grid-column: col / span 7;
     grid-row: 2 / 3;
   }
+}
+
+.donate__complete-text {
+  position: absolute;
+  z-index: 2;
+  top: -45px;
+  left: 20px;
+  width: 440px;
+  min-height: 670px;
+  margin: 0;
+  margin-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 72px;
+  padding-bottom: 65px;
+  background: #edfcff;
+  border: 2px solid #414141;
+  box-sizing: border-box;
+  border-radius: 0px 0px 60px 60px;
+
+  @media (max-width: 766px) {
+    position: relative;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    min-height: auto;
+    padding-left: 20px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 160%;
+    color: #414141;
+
+    &::first-letter {
+      font-family: $first-letter;
+      font-size: 96px;
+      line-height: 36px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 160%;
+    /* or 38px */
+
+    color: #414141;
+  }
+
+  @media (max-width: 766px) {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    padding-left: 20px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+
+      &::first-letter {
+        font-size: 60px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.donate__complete-share {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
 }

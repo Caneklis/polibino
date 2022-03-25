@@ -123,6 +123,15 @@
       text-align: center;
     }
   }
+
+  @media (max-width: 760px) {
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .donate-form__input {
@@ -188,7 +197,7 @@
   }
 
   @media (min-width: 768px) {
-    max-width: 247px;
+    max-width: 310px;
     font-size: 14px;
     line-height: 16px;
 
@@ -210,6 +219,11 @@
   display: flex;
   justify-content: center;
   flex-grow: 1;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    padding-left: 30px;
+  }
 }
 
 .donate-form__download {
@@ -280,8 +294,13 @@
     }
   }
 
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
   @media (min-width: 768px) {
-    width: 190px;
+    width: 210px;
     max-width: 300px;
     margin: 0;
     padding-left: 34px;
@@ -300,4 +319,10 @@
 .donate-form__select {
   margin-bottom: 25px;
   width: 100%;
+}
+
+.donate-form-input-field {
+  &--full {
+    grid-column: 1 / -1;
+  }
 }
