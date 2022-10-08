@@ -1,0 +1,150 @@
+.request-prepare {
+  margin-bottom: 80px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 180px;
+  }
+}
+
+.request-prepare__wrapper {
+  @include wrapper;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    align-items: flex-start;
+  }
+}
+
+.request-prepare__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  color: $base-color;
+
+  @media (min-width: 768px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.request-prepare__card {
+  max-width: 410px;
+  margin-bottom: 35px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 20px 1fr 18px;
+  align-items: flex-start;
+  padding-bottom: 13px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0px 0px 29px rgba(0, 0, 0, 0.15);
+
+  img {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  h3 {
+    grid-column: 2 / 3;
+    margin-top: 22px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 132%;
+    color: $base-color;
+  }
+
+  p {
+    grid-column: 2 / 3;
+    margin: 0;
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 132%;
+    color: #a4a4a4;
+  }
+
+  a {
+    grid-column: 2 / 3;
+    width: max-content;
+    font-size: 18px;
+    line-height: 132%;
+    /* or 24px */
+
+    text-decoration: underline;
+
+    color: #454545;
+  }
+
+  @media (min-width: 768px) {
+    grid-column: 1 / span 4;
+    margin-bottom: 0;
+  }
+}
+
+.request-prepare__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  font-size: 20px;
+  line-height: 132%;
+  color: #a4a4a4;
+
+  p {
+    margin: 0;
+
+    span {
+      color: $base-color;
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-column: 5 / span 8;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    grid-column: 6 / span 7;
+  }
+}
+
+.request-prepare__btn {
+  display: grid;
+  grid-template-columns: 1fr 21px;
+  column-gap: 10px;
+  align-items: flex-end;
+  align-self: flex-start;
+  margin-top: 35px;
+  padding: 9px 11px 8px 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  background: #8ac3e9;
+
+  @media (min-width: 768px) {
+    grid-column: 9 / span 4;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column: 11 / span 2;
+    transition: background 0.3s ease-in-out;
+
+    svg {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background: $green-color;
+
+      svg {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

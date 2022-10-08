@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Шуховская башня</title>
+    <meta name="description" content="Description index">
+    <link rel="preload" href="/fonts/classica_one-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ubuntu-v15-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" media="all" href="/css/style.min.css" />
+    <!-- BEGIN social data -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+    <!-- END social data -->
+    <link rel="icon" href="/favicon/favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/favicon/manifest.webmanifest">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="main-nav">
+          <div class="logo">
+            <a href="#" class="logo__link"><img src="/images/logo.svg" width="338" height="60" alt="Логотип усадьбы"></a>
+          </div>
+          <button class="main-nav__button" type="button" aria-expanded="false" aria-controls="main-nav__list">
+            <svg class="main-nav__icon" aria-hidden="true" width="30" height="16">
+              <use class="main-nav__icon-menu" href="/images/sprite_auto.svg#menu"></use>
+              <use class="main-nav__icon-cross" href="/images/sprite_auto.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="main-nav__menu">
+            <ul class="main-nav__list" id="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current" href="#">О фонде</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Общая информация</a></li>
+                  <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Попечительский совет</a></li>
+                  <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Управляющий совет</a></li>
+                  <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Документы и отчетность</a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Проекты</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Наследие Нечаевых</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="main-nav__user-block">
+              <li class="blind-version">
+                <a href="#">
+                  <svg class="main-nav__icon" aria-hidden="true" width="21" height="13">
+                    <use class="main-nav__icon-menu" href="/images/sprite_auto.svg#icon-eye"></use>
+                  </svg>
+                  <span class="visually-hidden">Версия для слабовидящих</span>
+                </a>
+              </li>
+              <li class="search">
+                <form action="#" class="search__form">
+                  <input type="search">
+                  <button class="search__btn" type="submit">
+                    <svg class="main-nav__icon" aria-hidden="true" width="17" height="18">
+                      <use class="main-nav__icon-menu" href="/images/sprite_auto.svg#icon-search"></use>
+                    </svg>
+                    <span class="visually-hidden">Найти</span>
+                  </button>
+                </form>
+              </li>
+              <li class="lang">
+                <a href="#" class="lang__link">En</a>
+              </li>
+              <li class="donate"><a href="#" class="donate__link"> Поддержать <svg class="main-nav__icon" aria-hidden="true" width="16" height="14">
+                    <use class="main-nav__icon-menu" href="/images/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="main-nav__social  social">
+              <ul class="social__list  social__list--header">
+                <li class="social__item">
+                  <a class="social__link  social__link--inst" href="#">
+                    <span class="visually-hidden">Страница в инстаграме</span>
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use href="/images/sprite_auto.svg#icon-inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link  social__link--trip" href="#">
+                    <span class="visually-hidden">Страница в трипадвайзере</span>
+                    <svg aria-hidden="true" width="34" height="20">
+                      <use href="/images/sprite_auto.svg#icon-trip"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link  social__link--vk" href="#">
+                    <span class="visually-hidden">Страница в вк</span>
+                    <svg aria-hidden="true" width="32" height="19">
+                      <use href="/images/sprite_auto.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link  social__link--fb" href="#">
+                    <span class="visually-hidden">Страница на фейсбуке</span>
+                    <svg aria-hidden="true" width="10" height="20">
+                      <use href="/images/sprite_auto.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- BEGIN content -->
+    <main class="page__main">
+      <div class="body-blackout"></div>
+      <div class="tooltip-content">
+      </div>
+      <section class="history">
+        <div class="history__wrapper">
+          <div class="history__head">
+            <div class="history__head-text">
+              <h1>Шуховская башня в Полибино</h1>
+              <p>первая в мире башня гиперболоидной конструкции 1896 года инженера В.Г. Шухова в Липецкой области <i>объект культурного наследия федерального значения</i></p>
+            </div>
+            <a class="history__head-btn" href="#"><span>Скачать <br>презентацию</span> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.94981 17.0502C4.76231 16.8627 4.65697 16.6084 4.65697 16.3432C4.65697 16.078 4.76231 15.8237 4.94981 15.6362L13.141 7.44504L7.07078 7.44646C6.80527 7.44645 6.55064 7.34098 6.36289 7.15324C6.17515 6.9655 6.06968 6.71087 6.06968 6.44536C6.06968 6.17985 6.17515 5.92522 6.36289 5.73748C6.55064 5.54974 6.80527 5.44426 7.07078 5.44426L15.5546 5.44426C15.6861 5.4441 15.8164 5.46988 15.9379 5.52013C16.0595 5.57038 16.1699 5.64411 16.2629 5.73711C16.3559 5.8301 16.4296 5.94053 16.4799 6.06206C16.5301 6.18359 16.5559 6.31385 16.5557 6.44536L16.5557 14.9292C16.5557 15.1947 16.4503 15.4494 16.2625 15.6371C16.0748 15.8248 15.8201 15.9303 15.5546 15.9303C15.2891 15.9303 15.0345 15.8248 14.8468 15.6371C14.659 15.4494 14.5535 15.1947 14.5535 14.9292L14.555 8.85902L6.36379 17.0502C6.17628 17.2377 5.92197 17.343 5.6568 17.343C5.39163 17.343 5.13732 17.2377 4.94981 17.0502Z" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+          <div class="breadcrumbs  breadcrumbs--full">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="#">Наследие Нечаевых</a></li>
+              <li class="breadcrumbs__item"><a>Шуховская башня</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="history__main-slider">
+          <div class="history__wrapper">
+            <div class="history__main-slider-arrows">
+              <button class="history__main-slider-arrow-prev" type="button">
+                <svg aria-hidden="true" width="32" height="20">
+                  <use href="/images/sprite_auto.svg#icon-arrow-slider-left"></use>
+                </svg>
+              </button>
+              <button class="history__main-slider-arrow-next" type="button">
+                <svg aria-hidden="true" width="32" height="20">
+                  <use href="/images/sprite_auto.svg#icon-arrow-slider-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide  history__main-slider-slide">
+                <figure>
+                  <img src="/images/history/history-slider-pic-1.jpg" alt="">
+                  <figcaption>
+                    <p>© Фотография В.А. Разумова vadimrazumov.ru</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide  history__main-slider-slide">
+                <figure>
+                  <img src="/images/history/history-slider-pic-1.jpg" alt="">
+                  <figcaption>
+                    <p>© Фотография В.А. Разумова vadimrazumov.ru</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="history__wrapper">
+          <div class="timeline">
+            <h2 class="timeline__title">История памятника</h2>
+            <ul class="timeline__list">
+              <li class="timeline__item" data-aos="fade-up">
+                <p class="timeline__year">1896</p>
+                <article class="timeline__article">
+                  <div class="timeline__slider">
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <figure>
+                            <a href="/images/history/history-timeline-1.jpg" data-fancybox><img src="/images/history/history-timeline-1.jpg" alt=""></a>
+                            <figcaption>
+                              <p>фотограф А.О. Карелин, 1896 г.</p>
+                              <p><span>Русский музей фотографии fotomuseum.nnov.ru</span></p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="swiper-slide">
+                          <figure>
+                            <a href="/images/history/history-timeline-2.jpg" data-fancybox><img src="/images/history/history-timeline-1.jpg" alt=""></a>
+                            <figcaption>
+                              <p>фотограф А.О. Карелин, 1896 г.</p>
+                              <p><span>Русский музей фотографии fotomuseum.nnov.ru</span></p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline__slider-contols">
+                      <button class="timeline__slider-arrow-prev" type="button">
+                        <svg aria-hidden="true" width="32" height="20">
+                          <use href="/images/sprite_auto.svg#icon-arrow-slider-left"></use>
+                        </svg>
+                      </button>
+                      <div class="swiper-pagination"></div>
+                      <button class="timeline__slider-arrow-next" type="button">
+                        <svg aria-hidden="true" width="32" height="20">
+                          <use href="/images/sprite_auto.svg#icon-arrow-slider-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="timeline__article-text">
+                    <h3>Подлинная первая в мире гиперболоидная башня</h3>
+                    <p>Уникальный памятник архитектуры. Башня была представлена на <a href="#">XVI Всероссийской промышленной и художественной выставке</a> в 1896 году в Нижнем Новгороде, снабжала водой всю выставку и была смотровой площадкой. После ее невероятного успеха в России в регионах стали строиться гиперболические конструкции.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="timeline__item" data-aos="fade-up">
+                <p class="timeline__year">189?</p>
+                <article class="timeline__article">
+                  <div class="timeline__slider">
+                    <figure>
+                      <a href="/images/history/history-timeline-2.jpg" data-fancybox><img src="/images/history/history-timeline-2.jpg" alt=""></a>
+                      <figcaption>
+                        <p>фотография из архива Ивана Локтионова</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="timeline__article-text">
+                    <h3>Башню смонтировали в селе Полибино (какой-то заголовок)</h3>
+                    <p>После выставки эту 37-метровую башню приобрел и перевез в разобранном виде в свое имение в селе Полибино меценат и фабрикант Юрий Степанович Нечаев-Мальцов, где башню смонтировали обратно под строгим надзором В.Г. Шухова. Современники сравнивали ее с башней Эйфеля в Париже.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="timeline__item" data-aos="fade-up">
+                <p class="timeline__year">1913</p>
+                <article class="timeline__article">
+                  <div class="timeline__slider">
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <figure>
+                            <img src="/images/history/history-timeline-3.jpg" alt="">
+                            <figcaption>
+                              <p>фотограф А.О. Карелин, 1896 г.</p>
+                              <p><span>Русский музей фотографии <br> fotomuseum.nnov.ru</span></p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="swiper-slide">
+                          <figure>
+                            <img src="/images/history/history-timeline-3.jpg" alt="">
+                            <figcaption>
+                              <p>Овальный павильон с сетчатым висячим покрытием</p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline__slider-contols">
+                      <button class="timeline__slider-arrow-prev" type="button">
+                        <svg aria-hidden="true" width="32" height="20">
+                          <use href="/images/sprite_auto.svg#icon-arrow-slider-left"></use>
+                        </svg>
+                      </button>
+                      <div class="swiper-pagination"></div>
+                      <button class="timeline__slider-arrow-next" type="button">
+                        <svg aria-hidden="true" width="32" height="20">
+                          <use href="/images/sprite_auto.svg#icon-arrow-slider-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="timeline__article-text">
+                    <h3>Нижегородская выставка (какой-то заголовок)</h3>
+                    <p>Нижегородская выставка и встреча Владимира Шухова и с меценатом Ю.С. Нечаевым-Мальцовым стали судьбоносными в судьбе инженера. Восемь павильнов с легкими сетчатыми конструкциями, круглая ротонда и водонапорная башня открыли Шухову путь к славе и дальнейшим архитектурным шедеврам.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="timeline__item" data-aos="fade-up">
+                <p class="timeline__year">2012</p>
+                <article class="timeline__article">
+                  <div class="timeline__slider">
+                    <figure>
+                      <a href="/images/history/history-timeline-4.jpg" data-fancybox><img src="/images/history/history-timeline-4.jpg" alt=""></a>
+                      <figcaption>
+                        <p>фрагмент рабочего чертежа проекта <br> консервации, 2012 г.</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="timeline__article-text">
+                    <h3>Башня сохранилась до наших дней</h3>
+                    <p>Уцелев в революционные годы, разграбленная и ветшающая, башня сохранилась до наших дней. Ее состояние требует постоянного мониторинга, регулярной реставрации, мероприятий по охране прилегающей территории. В 2012 году Министерством культуры были выделены средства на новый фундамент, очистку и покраску башни, усиление креплений. Теперь на башню можно подняться.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="timeline__item" data-aos="fade-up">
+                <p class="timeline__year">2021</p>
+                <article class="timeline__article">
+                  <div class="timeline__slider">
+                    <figure>
+                      <a href="/images/history/history-timeline-5.jpg" data-fancybox><img src="/images/history/history-timeline-5.jpg" alt=""></a>
+                      <figcaption>
+                        <p>Елена Агафонова, член Управляющего совета Фонда, на церемонии награждения конкурса</p>
+                        <p><span>Живое наследие «ТОП-1000 культурных и туристических брендов России»</span></p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="timeline__article-text">
+                    <h3>Башня сохранилась до наших дней</h3>
+                    <p>Уцелев в революционные годы, разграбленная и ветшающая, башня сохранилась до наших дней. Ее состояние требует постоянного мониторинга, регулярной реставрации, мероприятий по охране прилегающей территории. В 2012 году Министерством культуры были выделены средства на новый фундамент, очистку и покраску башни, усиление креплений. Теперь на башню можно подняться.</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="history__main-photo">
+          <figure>
+            <a href="https://youtu.be/TcbpTWao0Pg" data-fancybox>
+              <img src="/images/history/history-video-preview.jpg" alt="">
+              <svg class="history__main-photo-icon-play" aria-hidden="true" width="77" height="50">
+                <use href="/images/sprite_auto.svg#icon-play"></use>
+              </svg>
+            </a>
+            <figcaption>
+              <p>© Видео с квадрокоптера В.А. Разумова vadimrazumov.ru</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="history__wrapper">
+          <article class="history__text-article">
+            <h2>Современность</h2>
+            <p>По проектам инженера Шухова в начале XX века строились гиперболоидные башни, мачты кораблей, радиобашни, маяки, башни-опоры ЛЭП.</p>
+            <p>До сих пор в мире используются подобные конструкции для возведения различных сооружений.</p>
+            <div class="history__text-article-gallery  history__text-article-gallery--2-col">
+              <a href="/images/history/history-gallery-1.jpg" data-fancybox>
+                <img src="/images/history/history-gallery-1.jpg" alt="" data-aos="fade-up">
+              </a>
+              <a href="/images/history/history-gallery-2.jpg" data-fancybox>
+                <img src="/images/history/history-gallery-2.jpg" alt="" data-aos="fade-up">
+              </a>
+            </div>
+            <p>Современные архитекторы используют изобретения В.Г. Шухова в своих самых ярких проектах.</p>
+            <div class="history__text-article-gallery">
+              <figure>
+                <a href="/images/history/history-gallery-3.jpg" data-fancybox>
+                  <img src="/images/history/history-gallery-3.jpg" alt="" data-aos="fade-up">
+                </a>
+                <figcaption>
+                  <p>Башня в порту Кобе в Японии, 1963 г.</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="/images/history/history-gallery-4.jpg" data-fancybox>
+                  <img src="/images/history/history-gallery-4.jpg" alt="" data-aos="fade-up">
+                </a>
+                <figcaption>
+                  <p>Проект Нормана Фостера — небоскреба Мэри-Экс в Лондоне, 2004 г.</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="/images/history/history-gallery-5.jpg" data-fancybox>
+                  <img src="/images/history/history-gallery-5.jpg" alt="" data-aos="fade-up">
+                </a>
+                <figcaption>
+                  <p>Торгово-развлекательный центр Хан Шатыр в Астане, Казахстан 2010 г.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <p>Интересный обзор гиперболоидных конструкций, построенных по следам идей Шухова во всем мире — в Спецпроекте РИА</p>
+            <a href="#">
+              <img src="/images/history/history-specproject.png" alt="">
+            </a>
+            <p>Конструкции уникальной, первой в своем роде гиперболоидной башни и сегодня вдохновляют творческих людей создавать ее копии и произведения с ее обликом, отражающие гений инженерной мысли Владимира Шухова.</p>
+            <div class="history__text-article-gallery">
+              <figure>
+                <a href="/images/history/history-gallery-6.jpg" data-fancybox>
+                  <img src="/images/history/history-gallery-6.jpg" alt="" data-aos="fade-up">
+                </a>
+                <figcaption>
+                  <p>Мастер-класс Вячеслава Червякова по набойке на ткани в усадьбе Полибино</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="/images/history/history-gallery-7.jpg" data-fancybox>
+                  <img src="/images/history/history-gallery-7.jpg" alt="" data-aos="fade-up">
+                </a>
+                <figcaption>
+                  <p>Мастерская «Металлистика» Романа Королева делает модели башни из металла</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="/images/history/history-gallery-8.jpg" data-fancybox>
+                  <img src="/images/history/history-gallery-8.jpg" alt="" data-aos="fade-up">
+                </a>
+                <figcaption>
+                  <p>А.Куприянова. Открытка из проекта «Полибино глазами художников»</p>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="request-prepare">
+        <div class="request-prepare__wrapper">
+          <h2 class="request-prepare__title">Мы готовим заявку на включение башни <br> в Список всемирного наследия ЮНЕСКО</h2>
+          <div class="request-prepare__card">
+            <img src="/images/history/unesco-logo.jpg" alt="Логотип Unesco">
+            <h3>The Criteria To Selection</h3>
+            <p>The Criteria for Selection to be included on the World Heritage List...</p>
+            <a href="whc.unesco.org">whc.unesco.org <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.94981 17.1568C4.76231 16.9693 4.65697 16.715 4.65697 16.4499C4.65697 16.1847 4.76231 15.9304 4.94981 15.7429L13.141 7.5517L7.07078 7.55311C6.80527 7.55311 6.55064 7.44764 6.36289 7.2599C6.17515 7.07216 6.06968 6.81753 6.06968 6.55202C6.06968 6.28651 6.17515 6.03188 6.36289 5.84414C6.55064 5.65639 6.80527 5.55092 7.07078 5.55092L15.5546 5.55092C15.6861 5.55076 15.8164 5.57654 15.9379 5.62679C16.0595 5.67704 16.1699 5.75077 16.2629 5.84377C16.3559 5.93676 16.4296 6.04719 16.4799 6.16872C16.5301 6.29025 16.5559 6.42051 16.5557 6.55202L16.5557 15.0359C16.5557 15.3014 16.4503 15.556 16.2625 15.7438C16.0748 15.9315 15.8201 16.037 15.5546 16.037C15.2891 16.037 15.0345 15.9315 14.8468 15.7438C14.659 15.556 14.5535 15.3014 14.5535 15.0359L14.555 8.96568L6.36379 17.1568C6.17628 17.3443 5.92197 17.4497 5.6568 17.4497C5.39163 17.4497 5.13732 17.3443 4.94981 17.1568Z" fill="currentColor" />
+              </svg></a>
+          </div>
+          <div class="request-prepare__text"> Водонапорная башня в Липецкой области и башня-опора в Нижнем Новгороде достойны занять место в Списке всемирного наследия ЮНЕСКО, о чем уже был доклад на VI Международном конгрессе «Всемирное наследие стран СНГ». Памятник соответствует сразу двум критериям для отнесения его к мировому достоянию: <p><span>I. to represent a masterpiece of human creative genius;</span></p>
+            <p>I. является произведением творческого гения человека</p>
+            <p><span>IV. to be an outstanding example of a type of building, architectural or technological ensemble or landscape which illustrates (a) significant stage(s) in human history;</span></p>
+            <p>IV. представляет собой выдающийся образец типа строения, архитектурного или технологического ансамбля или ландшафта, иллюстрирующего важный этап (этапы) в истории человечества</p>
+            <a class="request-prepare__btn" href="#"><span>Скачать <br>презентацию</span> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.94981 17.0502C4.76231 16.8627 4.65697 16.6084 4.65697 16.3432C4.65697 16.078 4.76231 15.8237 4.94981 15.6362L13.141 7.44504L7.07078 7.44646C6.80527 7.44645 6.55064 7.34098 6.36289 7.15324C6.17515 6.9655 6.06968 6.71087 6.06968 6.44536C6.06968 6.17985 6.17515 5.92522 6.36289 5.73748C6.55064 5.54974 6.80527 5.44426 7.07078 5.44426L15.5546 5.44426C15.6861 5.4441 15.8164 5.46988 15.9379 5.52013C16.0595 5.57038 16.1699 5.64411 16.2629 5.73711C16.3559 5.8301 16.4296 5.94053 16.4799 6.06206C16.5301 6.18359 16.5559 6.31385 16.5557 6.44536L16.5557 14.9292C16.5557 15.1947 16.4503 15.4494 16.2625 15.6371C16.0748 15.8248 15.8201 15.9303 15.5546 15.9303C15.2891 15.9303 15.0345 15.8248 14.8468 15.6371C14.659 15.4494 14.5535 15.1947 14.5535 14.9292L14.555 8.85902L6.36379 17.0502C6.17628 17.2377 5.92197 17.343 5.6568 17.343C5.39163 17.343 5.13732 17.2377 4.94981 17.0502Z" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="make-donate">
+        <div class="make-donate__wrapper">
+          <div class="make-donate__content  make-donate__content--with-form">
+            <div class="make-donate__header">
+              <h2 class="make-donate__title">Сделать пожертвование <br><a href="#">Реквизиты для юридических лиц <svg class="main-nav__icon" aria-hidden="true" width="16" height="14">
+                    <use class="main-nav__icon-menu" href="/images/sprite_auto.svg#icon-arrow"></use>
+                  </svg></a>
+              </h2>
+            </div>
+            <form class="make-donate__form  donate-form">
+              <div class="donate-form__type">
+                <label class="donate-form__checked-field">
+                  <input class="visually-hidden" type="radio" name="frequency" value="onetime"><span>Разовое</span>
+                </label>
+                <label class="donate-form__checked-field">
+                  <input class="visually-hidden" type="radio" name="frequency" value="annually"><span>Ежегодное</span>
+                </label>
+              </div>
+              <div class="donate-form__price">
+                <label class="donate-form__checked-field">
+                  <input class="visually-hidden" type="radio" name="price" value="500"><span>500</span>
+                </label>
+                <label class="donate-form__checked-field">
+                  <input class="visually-hidden" type="radio" name="price" value="1000"><span>1000</span>
+                </label>
+                <label class="donate-form__checked-field">
+                  <input class="visually-hidden" type="radio" name="price" value="5000"><span>5000</span>
+                </label>
+                <div class="donate-form__checked-field">
+                  <input class="donate-form__other-price-input   donate-form__other-price-input--uncorrect" type="text" class="form-control" name="amount" id="amount" placeholder="Другая сумма">
+                </div>
+              </div>
+              <div class="donate-form__select">
+                <div class="custom-select" data-select="" data-name="name-example-1" data-id="id-example-1">
+                  <span class="custom-select__label">Какой проект Вы хотите поддержать?</span><span class="custom-select__error">some-error</span>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                    <span class="custom-select__text"></span><span class="custom-select__icon"></span>
+                  </button>
+                  <ul class="custom-select__list" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option"> Реставрация усадьбы </li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option"> Реставрация усадьбы </li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option"> Реставрация усадьбы </li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option"> Реставрация усадьбы </li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option"> Реставрация усадьбы </li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option"> Реставрация усадьбы </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="donate-form__contacts">
+                <div class="donate-form-input-field  donate-form-input-field--full">
+                  <label class="visually-hidden" for="name-full">ФИО:</label>
+                  <input type="text" class="donate-form__input  donate-form__input--uncorrect" name="name-full" id="name-full" placeholder="ФИО">
+                </div>
+                <div class="donate-form-input-field">
+                  <label class="visually-hidden" for="name">Имя:</label>
+                  <input type="text" class="donate-form__input  donate-form__input--uncorrect" name="name" id="name" placeholder="Имя">
+                </div>
+                <div class="donate-form-input-field">
+                  <label class="visually-hidden" for="surname">Фамилия:</label>
+                  <input type="text" class="donate-form__input" name="surname" id="surname" placeholder="Имя">
+                </div>
+                <div class="donate-form-input-field">
+                  <label class="visually-hidden" for="phone">Телефон:</label>
+                  <input type="tel" class="donate-form__input" name="phone" id="phone" placeholder="Телефон">
+                </div>
+                <div class="donate-form-input-field">
+                  <label class="visually-hidden" for="email">E-mail:</label>
+                  <input type="email" class="donate-form__input" name="email" id="email" placeholder="E-mail">
+                </div>
+              </div>
+              <div class="donate-form__agreement">
+                <input class="visually-hidden" name="iagreeContract" id="iagreeContract" type="checkbox" required>
+                <label for="iagreeContract">согласен с <a target="_blank" href="#">Политикой конфиденциальности</a>
+                </label>
+              </div>
+              <div class="donate-form__submit">
+                <!-- <a class="donate-form__download" href="#">
+                <span>Скачать реквизиты</span>
+                <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.0632 17.5711C13.2521 17.5711 13.4334 17.6462 13.567 17.7798C13.7006 17.9135 13.7757 18.0947 13.7757 18.2837C13.7757 18.4726 13.7006 18.6539 13.567 18.7875C13.4334 18.9211 13.2521 18.9962 13.0632 18.9962L0.712536 19C0.523559 19 0.342323 18.9249 0.208697 18.7913C0.0750704 18.6577 0 18.4764 0 18.2875C0 18.0985 0.0750704 17.9173 0.208697 17.7836C0.342323 17.65 0.523559 17.5749 0.712536 17.5749L13.0632 17.5711ZM6.79094 0.0066503L6.88784 0C7.06003 7.26112e-06 7.22639 0.0623636 7.35615 0.175537C7.48592 0.288711 7.57031 0.445046 7.59373 0.615631L7.60038 0.712536L7.59943 13.7139L11.1355 10.1798C11.2562 10.0591 11.4161 9.98571 11.5863 9.97299C11.7564 9.96026 11.9255 10.009 12.0628 10.1104L12.1435 10.1798C12.264 10.3005 12.3372 10.4605 12.3498 10.6307C12.3623 10.8008 12.3134 10.9699 12.2119 11.107L12.1426 11.1868L7.39517 15.9342C7.27452 16.0549 7.11458 16.1282 6.94442 16.141C6.77426 16.1537 6.60518 16.1049 6.46792 16.0036L6.38717 15.9342L1.63408 11.1878C1.50626 11.0608 1.4313 10.8901 1.42427 10.7101C1.41724 10.53 1.47867 10.354 1.59621 10.2175C1.71374 10.0809 1.87864 9.99394 2.05771 9.97407C2.23678 9.95421 2.41673 10.0029 2.56133 10.1104L2.64113 10.1788L6.17436 13.7073L6.17531 0.712536C6.17532 0.540351 6.23767 0.373994 6.35085 0.244228C6.46402 0.114462 6.62035 0.0300674 6.79094 0.0066503L6.88784 0L6.79094 0.0066503Z"
+                    fill="currentColor" />
+                </svg>
+              </a> -->
+                <button class="donate-form__btn" type="submit">Оплатить <svg class="main-nav__icon" aria-hidden="true" width="16" height="14">
+                    <use class="main-nav__icon-menu" href="/images/sprite_auto.svg#icon-arrow"></use>
+                  </svg></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- END content -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a class="footer__logo-link" href="#">
+            <svg aria-hidden="true" width="338" height="60">
+              <use href="/images/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="footer-copy"><span>©</span> Полибино 2021</div>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">О фонде</a></li>
+            <li class="footer__nav-item"><a href="#">Общая информация</a></li>
+            <li class="footer__nav-item"><a href="#">Попечительский совет</a></li>
+            <li class="footer__nav-item"><a href="#">Управляющий совет</a></li>
+            <li class="footer__nav-item"><a href="#">Документы и отчетность</a></li>
+            <li class="footer__nav-item"><a href="#">Наши меценаты</a></li>
+            <li class="footer__nav-item"><a href="#">Наши спонсоры</a></li>
+            <li class="footer__nav-item"><a href="#">Наши партнеры</a></li>
+            <li class="footer__nav-item"><a href="#">Наши партнеры</a></li>
+            <li class="footer__nav-item"><a href="#">Новости и события</a></li>
+            <li class="footer__nav-item"><a href="#">Мы в СМИ</a></li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">Проекты</a></li>
+            <li class="footer__nav-item"><a href="#">Реконструкция усадьбы</a></li>
+            <li class="footer__nav-item"><a href="#">Реконструкция усадьбы</a></li>
+            <li class="footer__nav-item"><a href="#">Авторские экскурсии</a></li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">Наследие Нечаевых</a></li>
+            <li class="footer__nav-item"><a href="#">Семья</a></li>
+            <li class="footer__nav-item"><a href="#">Усадьба Полибино</a></li>
+            <li class="footer__nav-item"><a href="#">ГМИИ им. Пушкина</a></li>
+            <li class="footer__nav-item"><a href="#">Шуховская башня</a></li>
+          </ul>
+        </div>
+        <div class="footer__user-block">
+          <div class="footer__donate"><a class="footer__donate-link" href="#"> Поддержать <svg aria-hidden="true" width="16" height="14">
+                <use href="/images/sprite_auto.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <a class="footer__contacts" href="#">Контакты</a>
+          <a class="footer__blind-version" href="#">Версия для слабовидящих</a>
+        </div>
+        <div class="footer__social  social">
+          <ul class="social__list  social__list--footer">
+            <li class="social__item">
+              <a class="social__link  social__link--inst" href="#">
+                <span class="visually-hidden">Страница в инстаграме</span>
+                <svg aria-hidden="true" width="22" height="22">
+                  <use href="/images/sprite_auto.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--trip" href="#">
+                <span class="visually-hidden">Страница в трипадвайзере</span>
+                <svg aria-hidden="true" width="31" height="18">
+                  <use href="/images/sprite_auto.svg#icon-trip"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--vk" href="#">
+                <span class="visually-hidden">Страница в вк</span>
+                <svg aria-hidden="true" width="30" height="17">
+                  <use href="/images/sprite_auto.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--fb" href="#">
+                <span class="visually-hidden">Страница на фейсбуке</span>
+                <svg aria-hidden="true" width="9" height="18">
+                  <use href="/images/sprite_auto.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__lang  lang">
+          <a href="#" class="lang__link">En</a>
+        </div>
+      </div>
+    </footer>
+    <!-- BEGIN scripts -->
+    <script src="/js/main.min.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>
