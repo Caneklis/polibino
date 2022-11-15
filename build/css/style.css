@@ -9958,9 +9958,14 @@ iframe {
   .timeline__list {
     display: grid;
     margin-bottom: 180px;
-    padding-left: 80px;
+    padding-left: 40px;
 
     row-gap: 70px;
+  }
+}
+@media (min-width: 1600px) {
+  .timeline__list {
+    padding-left: 80px;
   }
 }
 
@@ -10007,6 +10012,17 @@ iframe {
     margin-bottom: 0;
   }
   .timeline__item::before {
+    left: -48px;
+  }
+  .timeline__item::after {
+    left: -56px;
+  }
+}
+@media (min-width: 1600px) {
+  .timeline__item {
+    margin-bottom: 0;
+  }
+  .timeline__item::before {
     left: -88px;
   }
   .timeline__item::after {
@@ -10023,10 +10039,15 @@ iframe {
   line-height: 28px;
   color: #3b8f9e;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .timeline__year {
     position: absolute;
     top: 0;
+    left: -110px;
+  }
+}
+@media (min-width: 1600px) {
+  .timeline__year {
     left: -167px;
   }
 }
@@ -10140,11 +10161,6 @@ iframe {
 
 .request-prepare {
   margin-bottom: 80px;
-}
-@media (min-width: 1200px) {
-  .request-prepare {
-    margin-bottom: 180px;
-  }
 }
 
 .request-prepare__wrapper {
