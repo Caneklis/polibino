@@ -7538,6 +7538,11 @@ iframe {
   width: 100%;
   height: 100%;
 }
+@media (min-width: 768px) {
+  .page-section__link {
+    align-items: center;
+  }
+}
 @media (min-width: 1200px) {
   .page-section__link::before {
     content: "";
@@ -7594,9 +7599,8 @@ iframe {
 
     display: flex;
     justify-content: center;
-    min-height: 100px;
-    padding: 0;
-    padding-top: 15px;
+    min-height: 170px;
+    padding: 30px 20px 10px;
 
     font-size: 14px;
     line-height: 20px;
@@ -7610,7 +7614,7 @@ iframe {
 }
 @media (min-width: 1200px) {
   .page-section__name {
-    padding-top: 25px;
+    padding-top: 43px;
 
     font-size: 24px;
     line-height: 28px;
@@ -8761,6 +8765,12 @@ iframe {
 
   font-size: 12px;
   line-height: 16px;
+}
+.news-page__text-full p a {
+  color: #3b8f9e;
+}
+.news-page__text-full p a:hover {
+  text-decoration: underline;
 }
 .news-page__text-full p:last-child {
   margin-bottom: 0;

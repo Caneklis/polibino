@@ -60,6 +60,10 @@
   width: 100%;
   height: 100%;
 
+  @media (min-width: 768px) {
+    align-items: center;
+  }
+
   @media (min-width: 1200px) {
     &::before {
       content: "";
@@ -113,9 +117,8 @@
     right: -2px;
     display: flex;
     justify-content: center;
-    padding: 0;
-    padding-top: 15px;
-    min-height: 100px;
+    padding: 30px 20px 10px;
+    min-height: 170px;
     background-color: transparent;
     background-image: url("../images/page-section-name-bg.svg");
     background-repeat: no-repeat;
@@ -126,7 +129,7 @@
   }
 
   @media (min-width: 1200px) {
-    padding-top: 25px;
+    padding-top: 43px;
     font-size: 24px;
     line-height: 28px;
     background-image: none;

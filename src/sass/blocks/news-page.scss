@@ -261,6 +261,14 @@
     font-size: 12px;
     line-height: 16px;
 
+    a {
+      color: #3b8f9e;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
